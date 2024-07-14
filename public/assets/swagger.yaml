@@ -1,0 +1,27 @@
+openapi: 3.0.0
+info:
+  title: API de Simulación
+  description: API simulada para consulta de datos.
+  version: 1.0.0
+servers:
+  - url: http://localhost:8080
+paths:
+  /data:
+    get:
+      summary: Obtiene los datos
+      responses:
+        '200':
+          description: Datos obtenidos exitosamente
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                      example: 1
+                    name:
+                      type: string
+                      example: "Item 1"
