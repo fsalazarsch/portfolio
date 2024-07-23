@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 
 class Navbar extends Component {
   handleLinkClick = (event, page) => {
-    event.preventDefault(); // Prevenir la navegación por defecto
-    this.props.setPage(page); // Actualizar el estado de la página
+    event.preventDefault();
+    this.props.setPage(page);
   };
 
   render() {
@@ -38,7 +38,7 @@ class Navbar extends Component {
                     
                     <ul className="navbar-nav flex-column text-start">
                         <li className="nav-item">
-                            <a className="nav-link active" href="index.html"><i className="fas fa-user fa-fw me-2"></i>About Me<span className="sr-only">(current)</span></a>
+                            <a className="nav-link" href="#" onClick={(e) => this.handleLinkClick(e, 'index')}><i className="fas fa-user fa-fw me-2"></i>About Me<span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#" onClick={(e) => this.handleLinkClick(e, 'portfolio')}><i className="fas fa-laptop-code fa-fw me-2"></i>Portfolio</a>

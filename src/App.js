@@ -39,14 +39,14 @@ function App() {
       ContentComponent = ProjectDetail;
       break;
     default:
-      ContentComponent = Index; // Componente por defecto
+      ContentComponent = Index;
   }
 
 
   return (
     <div>
       <Navbar setPage={setPage} />
-      <ContentComponent />
+      <ContentComponent setPage={setPage}/>
 
     </div>
 
