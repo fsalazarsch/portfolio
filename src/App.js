@@ -8,6 +8,8 @@ import Blog from './components/Blog';
 import Contact from './components/Contact';
 import BlogDetail from './components/BlogDetail';
 import ProjectDetail from './components/ProjectDetail';
+import VideoTut from './components/VideoTut';
+import VideoDetail from './components/VideoDetail';
 
 
 
@@ -37,6 +39,12 @@ function App() {
       break;
     case "projectDetail":
       ContentComponent = ProjectDetail;
+      break;
+    case "videotut":
+      ContentComponent = VideoTut;
+      break;
+    case "videoDetail":
+      ContentComponent = VideoDetail;
       break;
     default:
       ContentComponent = Index;

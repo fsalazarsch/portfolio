@@ -100,39 +100,66 @@ export const skillsData =
           </table>",
         },
         {
-          icon: ["devicon-html5-plain colored", "devicon-css3-plain colored", "devicon-bootstrap-plain colored", "devicon-tailwindcss-original colored"],
-          title: "HTml/CSS",
-          detail: "Lorem ipsum dolor sit amet",
+          icon: ["devicon-html5-plain colored", "devicon-css3-plain colored", "devicon-bootstrap-plain colored", "devicon-tailwindcss-original colored", "devicon-bower-plain colored"],
+          title: "HTML/CSS",
+          detail: "<table><tr><td>HTML</td><td>🟩🟩🟩🟩🟩</td></tr>\
+          <tr><td>CSS</td><td>🟩🟩🟩🟩🟩</td></tr>\
+          <tr><td>Bootstrap</td><td>🟩🟩🟩🟩🟩</td></tr>\
+          <tr><td>Tailwind</td><td>🟩🟩🟩🟩🟨</td></tr>\
+          <tr><td>Bower</td><td>🟩🟩🟩🟨⬜</td></tr>\
+          </table>",
         },
         {
-          icon: ["devicon-dot-net-plain colored", "devicon-dotnetcore-plain colored","devicon-csharp-plain colored"],
-          title: "c#",
-          detail: "Lorem ipsum dolor sit amet",
+          icon: ["devicon-dotnetcore-plain colored","devicon-csharp-plain colored", "devicon-xamarin-original colored"],
+          title: ".NET",
+          detail: "<table><tr><td>HTML</td><td>🟩🟩🟩⬜⬜</td></tr>\
+          <tr><td>C#</td><td>🟩🟩🟩🟨⬜</td></tr>\
+          <tr><td>Entity Framework</td><td>🟩🟩🟩⬜⬜</td></tr>\
+          <tr><td>XUnit</td><td>🟩🟩🟩⬜⬜</td></tr>\
+          <tr><td>Xamarin</td><td>🟩🟨⬜⬜⬜</td></tr>\
+          </table>",
         },
         {
           icon: ["devicon-git-plain colored", "devicon-bash-plain colored", "devicon-docker-plain colored", "devicon-jenkins-line"],
           title: "Other",
-          detail: "Lorem ipsum dolor sit amet",
+          detail: "<table><tr><td>GIT</td><td>🟩🟩🟩🟩🟩</td></tr>\
+          <tr><td>Bash</td><td>🟩🟩🟩🟨⬜</td></tr>\
+          <tr><td>Docker</td><td>🟩🟩🟩⬜⬜</td></tr>\
+          <tr><td>Jenkins</td><td>🟩🟩🟩⬜⬜</td></tr>\
+          </table>",
         },
         {
           icon: ["devicon-oracle-original colored", "devicon-microsoftsqlserver-plain colored", "devicon-mysql-original colored", "devicon-postgresql-plain colored", "devicon-sqlite-plain colored"],
           title: "SQL",
-          detail: "Lorem ipsum dolor sit amet",
+          detail: "<table><tr><td>Oracle DB</td><td>🟩🟩🟩🟩🟨</td></tr>\
+          <tr><td>MSSQL</td><td>🟩🟩🟩🟩🟨</td></tr>\
+          <tr><td>MySQL</td><td>🟩🟩🟩🟩🟩</td></tr>\
+          <tr><td>PostgreSQL</td><td>🟩🟩🟩🟩🟨</td></tr>\
+          <tr><td>SQLite</td><td>🟩🟩🟩🟩⬜</td></tr>\
+          </table>",
         },
         {
           icon: ["devicon-mongodb-plain colored", "devicon-redis-plain colored"],
           title: "No-SQL",
-          detail: "Lorem ipsum dolor sit amet",
+          detail: "<table><tr><td>Mongo DB</td><td>🟩🟩🟩🟩🟨</td></tr>\
+          <tr><td>Redis</td><td>🟩🟩🟨⬜⬜</td></tr>\
+          </table>",
         },
         {
-          icon: ["devicon-amazonwebservices-plain-wordmark colored", "devicon-firebase-plain colored","devicon-googlecloud-plain colored"],
+          icon: ["devicon-amazonwebservices-plain-wordmark colored","devicon-googlecloud-plain colored"],
           title: "Cloud",
-          detail: "Lorem ipsum dolor sit amet",
+          detail: "<table><tr><td>AWS</td><td>🟩🟩🟩⬜⬜</td></tr>\
+          <tr><td>GCP</td><td>🟩🟨⬜⬜⬜</td></tr>\
+          </table>",
         },
         {
           icon: ["devicon-c-plain colored", "devicon-arduino-plain colored", "devicon-ruby-plain colored", "devicon-rails-plain colored"],
           title: "Tech Trials",
-          detail: "Lorem ipsum dolor sit amet",
+          detail: "<table><tr><td>C</td><td>🟩🟩🟩⬜⬜</td></tr>\
+          <tr><td>Arduino</td><td>🟩🟩⬜⬜⬜</td></tr>\
+          <tr><td>Ruby</td><td>🟩🟩🟨⬜⬜</td></tr>\
+          <tr><td>RoR</td><td>🟩⬜⬜⬜⬜</td></tr>\
+          </table>",
         },
 
 

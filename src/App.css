@@ -21,3 +21,7 @@
   color: #61dafb;
 }
 
+.table-inactive td {
+  background-color: #ececec !important;
+  color: #b9b9b9 !important;
+}

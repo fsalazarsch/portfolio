@@ -53,6 +53,9 @@ class Navbar extends Component {
                             <a className="nav-link" href="#" onClick={(e) => this.handleLinkClick(e, 'blog')}><i className="fas fa-blog fa-fw me-2"></i>Blog</a>
                         </li>
                         <li className="nav-item">
+                            <a className="nav-link" href="#" onClick={(e) => this.handleLinkClick(e, 'videotut')}><i className="fas fa-video fa-fw me-2"></i>Videos</a>
+                        </li>
+                        <li className="nav-item">
                             <a className="nav-link" href="#" onClick={(e) => this.handleLinkClick(e, 'contact')}><i className="fas fa-envelope-open-text fa-fw me-2"></i>Contact</a>
                         </li>
                     </ul>                    
