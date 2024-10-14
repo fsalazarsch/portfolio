@@ -31,8 +31,8 @@ class VideoDetail extends Component {
             semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
             porttitor eu, consequat vitae, eleifend ac, enim.{" "}
           </p>
-          <h5 className="my-3">Table Example:</h5>
-          <table className="table table-striped table-hover my-5">
+          <h5 className="my-3">PlayList:</h5>
+          <table className="table table-striped table-hover">
             <thead>
               <tr>
                 <th scope="col">Name</th>
@@ -47,7 +47,7 @@ class VideoDetail extends Component {
                 <td> <i className="fab fa-brand fa-github" /></td>
               </tr>
               <tr>
-                <td scope="row" style={{color: 'gray'}}><i className="fas fa-regular fa-circle-play" /> &nbsp;Vraibles</td>
+                <td scope="row" style={{color: 'gray'}}><i className="fas fa-regular fa-circle-play" /> &nbsp;Variables</td>
                 <td style={{color: 'gray'}}>(7:03)</td>
                 <td style={{color: 'gray'}}> <i className="fab fa-brand fa-github" /></td>
               </tr>

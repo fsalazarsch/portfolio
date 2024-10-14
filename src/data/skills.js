@@ -57,8 +57,8 @@ export const skillsData =
           title: "Java",
           detail: "<table><tr><td>SpringBoot</td><td>🟩🟩🟩🟩🟨</td></tr>\
           <tr><td>Play</td><td>🟩🟩⬜⬜⬜</td></tr>\
-          <tr><td>JUnit</td><td>🟩🟩🟩🟩⬜</td></tr>\
-          <tr><td>Mockito</td><td>🟩🟩⬜⬜⬜</td></tr>\
+          <tr><td>JUnit</td><td>🟩🟩🟩🟨⬜</td></tr>\
+          <tr><td>Mockito</td><td>🟩🟩🟩🟨⬜</td></tr>\
           </table>",
         },
         {
@@ -84,8 +84,8 @@ export const skillsData =
           title: "Android",
           detail: "<table><tr><td>Kotlin</td><td>🟩🟩🟩🟩⬜</td></tr>\
           <tr><td>Flutter</td><td>🟩🟩🟩🟩⬜</td></tr>\
-          <tr><td>Kharma</td><td>🟩🟩🟩🟩⬜</td></tr>\
-          <tr><td>VueJS</td><td>🟩🟩🟨⬜⬜</td></tr>\
+          <tr><td>Ionic</td><td>🟩🟩🟩🟩⬜</td></tr>\
+          <tr><td>Jetpack Compose</td><td>🟩🟩🟩🟨⬜</td></tr>\
           </table>",
         },
         {
@@ -148,7 +148,7 @@ export const skillsData =
         {
           icon: ["devicon-amazonwebservices-plain-wordmark colored","devicon-googlecloud-plain colored"],
           title: "Cloud",
-          detail: "<table><tr><td>AWS</td><td>🟩🟩🟩⬜⬜</td></tr>\
+          detail: "<table><tr><td>AWS</td><td>🟩🟩🟩🟨⬜</td></tr>\
           <tr><td>GCP</td><td>🟩🟨⬜⬜⬜</td></tr>\
           </table>",
         },
@@ -158,7 +158,7 @@ export const skillsData =
           detail: "<table><tr><td>C</td><td>🟩🟩🟩⬜⬜</td></tr>\
           <tr><td>Arduino</td><td>🟩🟩⬜⬜⬜</td></tr>\
           <tr><td>Ruby</td><td>🟩🟩🟨⬜⬜</td></tr>\
-          <tr><td>RoR</td><td>🟩⬜⬜⬜⬜</td></tr>\
+          <tr><td>RoR</td><td>🟩🟩⬜⬜⬜</td></tr>\
           </table>",
         },
 

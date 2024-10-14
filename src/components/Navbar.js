@@ -13,7 +13,7 @@ class Navbar extends Component {
     
     <header className="header text-center">     
         <div className="force-overflow">
-            <h1 className="blog-name pt-lg-4 mb-0"><a className="no-text-decoration" href="index.html">Simon Doe</a></h1>
+            <h1 className="blog-name pt-lg-4 mb-0"><a className="no-text-decoration" href="#">Felipe Salazar Schlotterbeck</a></h1>
             
             <nav className="navbar navbar-expand-lg navbar-dark" >
                 
@@ -22,16 +22,15 @@ class Navbar extends Component {
                 </button>
                 
                 <div id="navigation" className="collapse navbar-collapse flex-column" >
-                    <div className="profile-section pt-3 pt-lg-0">
-                        <img className="profile-image mb-3 rounded-circle mx-auto" src="assets/images/profile.png" alt="image"/>            
-                        
-                        <div className="bio mb-3">Hi, my name is Simon Doe and I'm a senior software engineer. Welcome to my personal website!</div>
+                    <div className="profile-section pt-3 pt-lg-0">                        
+                        <div className="bio mb-3">Hi, welcome to my personal website!</div>
                         <ul className="social-list list-inline py-2 mx-auto">
-                            <li className="list-inline-item"><a href="#"><i className="fab fa-twitter fa-fw"></i></a></li>
-                            <li className="list-inline-item"><a href="#"><i className="fab fa-linkedin-in fa-fw"></i></a></li>
-                            <li className="list-inline-item"><a href="#"><i className="fab fa-github-alt fa-fw"></i></a></li>
-                            <li className="list-inline-item"><a href="#"><i className="fab fa-stack-overflow fa-fw"></i></a></li>
-                            <li className="list-inline-item"><a href="#"><i className="fab fa-codepen fa-fw"></i></a></li>
+                            <li className="list-inline-item"><a href="https://shorturl.at/knLT6"><i className="fab fa-linkedin-in fa-fw"></i></a></li>
+                            <li className="list-inline-item"><a href="https://goo.gl/GfYwut"><i className="fab fa-github-alt fa-fw"></i></a></li>
+                            <li className="list-inline-item"><a href="https://goo.gl/VDBBK6"><i className="fab fa-bitbucket fa-fw"></i></a></li>
+                            <li className="list-inline-item"><a href="https://shorturl.at/cB4gk"><i className="fab fa-hackerrank fa-fw"></i></a></li>
+                            <li className="list-inline-item"><a href="https://goo.gl/jURXc1"><i className="fab fa-stack-overflow fa-fw"></i></a></li>
+                            <li className="list-inline-item"><a href="https://shorturl.at/egnT7"><i className="fab fa-youtube fa-fw"></i></a></li>
                         </ul>
                         <hr/> 
                     </div>
