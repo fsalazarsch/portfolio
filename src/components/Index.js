@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { Skills } from "./Skills";
-import profile from '../assets/profile.jpg';  // Importa la imagen
+import profile from '../assets/profile.jpg';  
 
 
 class Index extends Component {

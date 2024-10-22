@@ -1,0 +1,74 @@
+[
+    {
+        "posicion": "Freelance Mobile Developer",
+        "tiempo": "Jan 2023 - Now",
+        "lugar": "Freelance developer | Chile - USA",
+        "cuerpo": "<ul><li>Developer in mobile platforms, based in Dart/Flutter,Kotlin, Kivy (Python) and Java</li></ul>"
+    },
+    {
+        "posicion": "IT Engineer, Developer",
+        "tiempo": "Apr 2022 - Jan 2023",
+        "lugar": "Indra | Rio de Janeiro, Brasil (Home Office)",
+        "cuerpo": "<ul><li>Development of modules oriented to the Banking Sector using Java 11, development of API under Java</li><li>Usage of Databases Oracle and AS400 to small queries and Procedures</li><li>Usage of TDD using Mockito and Jtest to achieve objectives</li></ul>"
+    },
+    {
+        "posicion": "IT Engineer, Developer",
+        "tiempo": "Dec 2020 - Nov 2022",
+        "lugar": "Qintess | Rio de Janeiro, Brasil \/ Santiago, Chile (Home Office)",
+        "cuerpo": "<ul><li>Development of modules oriented to the Banking Sector using Java 11, development of API under Java</li><li>Angular Frontend develop and upgrade platform from 6.x to 12.x</li><li>Usage of Databases Oracle and AS400 to small queries and Procedures</li><li>Usage of TDD using Jasmine, Kharma, and mockito, to achieve objectives</li><li>Mentoring in platform of Qintess workspace to generate value</li></ul>"
+    },
+    {
+        "posicion": "IT Engineer",
+        "tiempo": "Aug 2020- Nov 2020",
+        "lugar": "Kubos SPA | Santiago, Chile",
+        "cuerpo": "<ul><li>Development of modules oriented to the Banking Sector using Java (1.8) as Backend and Angular as frontEnd</li><li>Database used Mysql and MongoDB</li></ul>"
+    },
+    {
+        "posicion": "Java, Android, IOS developer",
+        "tiempo": "Dec 2019 - Jun 2020",
+        "lugar": "Lealtad 360 | Santiago, Chile",
+        "cuerpo": "<ul><li>Development of customer fidelity solutions, focused on smartphones (native and hybrid), using backend made in Java, and frontEnd made in ionic (angular) and kotlin</li><li>Develop and consume API, in Java and PHP</li><li>Coaching of development process and analysis using kanban, scrum and ishikawa diagram (fishbone)</li><li>Usage of test in Jasmine, and mockito</li></ul>"
+    },
+    {
+        "posicion": "Tech Leader, Desarrollador",
+        "tiempo": "Aug 2017 - Nov 2019",
+        "lugar": "Bindex | Santiago, Chile",
+        "cuerpo": "<ul><li>Planning, administration and development of financial platforms under Flask, Django and Yii2, use of scraping</li><li>Testing using Pytest and PHPTest</li><li>Meet with clients to get common issues of old platforma and, manage new modules of financial platform</li><li>Use of scraping to provide real information y realtime to the users</li><li>Use of API for segmentation of several platforms, to provide information by client</li><li>Planned and managed the phases of the development life cycle of the software </li><li>Provided technical leadership to internals through coaching and mentorship</li><li>DB Administration in MySQL and MongoDB</li><li>Upgrade of old modules made in Java, from old JBoss version to Wildfly</li></ul>"
+    },
+    {
+        "posicion": "Tech Leader, Desarrollador DJango, Amazon Cloud",
+        "tiempo": "May 2016 - Jun 2017",
+        "lugar": "Connectus | Santiago, Chile",
+        "cuerpo": "<ul><li>Planeación y migración de plataforma de envío de SMS y Email  desde el principio, desde PHP hacia Django</li><li>Migracío de host compartido a Amazon AWS</li><li>Desarrollo de nuevos módulos implementando SMS usando Amazon Services</li><li>Asesoramiento a administradores no-técnicos utilizando kanban</li></ul>"
+    },
+    {
+        "posicion": "Project Manager, Desarollador IOS \/ Android",
+        "tiempo": "Ene 2014 - Abr 2018",
+        "lugar": "City Express | Santiago, Chile",
+        "cuerpo": "<ul><li>Planeación y desarrollo de todos los procesos internos dentro de la empresa</li><li>Automatomatización y simplificacción de procesos desarrollando plataforams web desde cero bajo Yii/Yii2</li><li>Systema de Administrationrealizado in Java and Swift para palataformas móviles, para adeministración de todas las platformas en la empresa</li><li>Mantener Balance Score Card, junto con proporcionar feedback dado por la plataforma</li></ul>"
+    },
+    {
+        "posicion": "Ingeniero TI Engineer, Desarollador Freelance",
+        "tiempo": "Jun 2013 - Ago 2013",
+        "lugar": "Hostname | Santiago, Chile",
+        "cuerpo": "<ul><li>Desarrollo y configuración de CMS a medida utilizando Zend Framework</li><li>Implementación de nuevas soluciones utilizando  Whcms y CakePHP</li><li>Aplicación de nueva infraestructura en servidores en CentOS, incluyendo propuestas de nuevas soluciones en servidores compartidos</li></ul>"
+    },
+    {
+        "posicion": "Desarollador PHP, Mobile  (pasantía)",
+        "tiempo": "Nov 2012 - Ene 2013",
+        "lugar": "Larrain Vial Ltd. | Santiago, Chile",
+        "cuerpo": "<ul><li>Desarrollo de red social interna, realizada en PHP, SQL Server y jQuery</li><li>Desarrollo e implementacion de nuevos plugins y addons a la solución</li></ul>"
+    },
+    {
+        "posicion": "Desarollador Freelance",
+        "tiempo": "Sep 2011 - Abr 2014",
+        "lugar": "Desarollador | Santiago, Chile",
+        "cuerpo": "<ul><li>Desarrollo en diversas plataformas de diseño, Recursos Humanos, y servicios públicosen el área TI</li><li>Uso de diversos lenguajes de programación como PHP, Python y Java además de diversos frameworks</li><li>Uso de KANBAN y  SCRUM para el desarrollo de soluciones en diversas etapaas</li></ul>"
+    },
+    {
+        "posicion": "Desarollador Java, XML, PHP",
+        "tiempo": "Ene 2011 - Abr 2011",
+        "lugar": "Neoingen Ltda.| Santiago, Chile",
+        "cuerpo": "<ul><li>Codificacion de páginas web PHP sin framework</li><li>Uso de Javascript, jQuery y Mootools</li><li>Consumo de servicios web desarrollados en Java, a plataforma web</li></ul>"
+    }
+]
