@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Experiences } from "../components/Experiences";
 import { SkillsResume } from "../components/SkillsResume";
+import { ProjectsList } from "../components/ProjectsData";
 
 
 class Resume extends Component {
@@ -39,20 +40,7 @@ class Resume extends Component {
     return (
 
 <div className="main-wrapper">
-  <section className="cta-section theme-bg-light py-5">
-    <div className="container text-center single-col-max-width">
-      <h2 className="heading mb-3">Online Resume</h2>
-      <a
-        className="btn btn-primary"
-        href="https://themes.3rdwavemedia.com/resources/sketch-template/resume-sketch-sketch-resume-template-for-software-developers/"
-        target="_blank"
-      >
-        <i className="fas fa-file-pdf me-2" />
-        Download PDF Version
-      </a>
-    </div>
-    {/*//container*/}
-  </section>
+
   <div className="container resume-container px-3 px-lg-5">
     <article className="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
       <div className="resume-header">
@@ -123,55 +111,10 @@ class Resume extends Component {
             {/*//work-section*/}
             <section className="project-section py-3">
               <h3 className="text-uppercase resume-section-heading mb-4">
-                Projects
+              {indexData.projects}
               </h3>
-              <div className="item mb-3">
-                <div className="item-heading row align-items-center mb-2">
-                  <h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
-                    Project Scientific / Financial calculator
-                  </h4>
-                  <div className="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
-                    Open Source
-                  </div>
-                </div>
-                <div className="item-content">
-                  <p>
-                  Design and development project for a scientific and financial calculator inspired by Casio models. The device will feature advanced mathematical, statistical, and financial functions, with an intuitive interface and high-precision display.
-                  </p>
-                </div>
-              </div>
-              {/*//item*/}
-              <div className="item">
-                <div className="item-heading row align-items-center mb-2">
-                  <h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
-                    Arduino braille Printer
-                  </h4>
-                  <div className="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
-                    Open Source
-                  </div>
-                </div>
-                <div className="item-content">
-                  <p>
-                  Design and development project for a Braille printer using Arduino technology. The device will enable cost-effective and accessible printing for visually impaired users, combining compact design, precision, and user-friendly operation. Ideal for educational institutions, libraries, and personal use.                  </p>
-                </div>
-              </div>
-              {/*//item*/}
-              <div className="item">
-                <div className="item-heading row align-items-center mb-2">
-                  <h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
-                    Career Project
-                  </h4>
-                  <div className="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
-                    Open Source
-                  </div>
-                </div>
-                <div className="item-content">
-                  <p>
-                    Development of an application for learning Japanese, compatible with Android devices and Nintendo DS. The app will feature interactive lessons, vocabulary games, and writing practice using touch and stylus input. Designed for learners of all levels.
-                  </p>
-                </div>
-              </div>
-              {/*//item*/}
+              <ProjectsList starred="true"/>
+
             </section>
             {/*//project-section*/}
           </div>
@@ -191,7 +134,7 @@ class Resume extends Component {
               <div className="item">
                 <h4 className="item-title">{indexData.professionals}</h4>
                 <ul className="list-unstyled resume-skills-list">
-                <SkillsResume  typeSkills="professional"/>
+                <SkillsResume typeSkills="professional"/>
                 </ul>
               </div>
               {/*//item*/}

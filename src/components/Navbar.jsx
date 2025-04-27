@@ -105,8 +105,20 @@ class Navbar extends React.Component {
             </div>
           </nav>
         </div>
+
+        
                     <div className="dark-mode-toggle text-center w-100">
-              <hr className="mb-4" />
+              
+
+              <a
+        className="btn btn-primary"
+        href={indexData.link_resume}
+        target="_blank"
+      >
+        <i className="fas fa-file-pdf me-2" />
+        {indexData.downlaod_pdf}
+      </a>
+<hr className="mb-4" />
               <h4 className="toggle-name mb-3">
                 <i className="fas fa-adjust me-1"></i>{indexData.dark_mode}
               </h4>

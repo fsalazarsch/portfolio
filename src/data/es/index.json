@@ -13,7 +13,10 @@
     "education": "Educación",
     "awards": "Certificaciones",
     "languages": "Idiomas",
-    "interests": "Intereses Personales"
+    "interests": "Intereses Personales",
+    "projects": "Projectos",
+    "downlaod_pdf" : "Descargar Resume PDF",
+    "link_resume": "https://drive.google.com/file/d/1Wk89nyjFsrGGbqkmFzxJpWOzp4nCwJaG/view?usp=drive_link"
 
 
 }

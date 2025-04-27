@@ -3,7 +3,7 @@ export const expData =
   en: 
   [
     {
-      "posicion": "Freelance Mobile Developer",
+      "posicion": "Freelance Developer / IT Consultant",
       "tiempo": "Jan 2023 - Present",
       "lugar": "Freelance developer | Chile - USA",
       "cuerpo": [
@@ -14,7 +14,18 @@ export const expData =
       "descripcion": "As a freelance mobile developer, I worked on creating mobile applications for Android and iOS platforms using a variety of technologies like Dart/Flutter, Kotlin, and Kivy in Python. I handled the end-to-end development process, including design, development, and maintenance, while adapting to specific client needs across the USA and Chile."
     },
     {
-      "posicion": "IT Engineer, FullStack Developer",
+      "posicion": "Software Engineer Consultant at BHP",
+      "tiempo": "Sept 2024 - Apr 2025",
+      "lugar": "BHP | Chile (Home Office)",
+      "cuerpo": [
+        "Led the recovery and stabilization of the PT-SUITE system, ensuring its operational continuity.",
+        "Reconstructed key modules of the ACQUIRE system to support critical homologation processes.",
+        "Delivered back-end solutions using .NET and Python, and enhanced front-end applications with React and Angular."
+      ],
+      "descripcion": "At BHP, I was responsible for leading the recovery and stabilization of the PT-SUITE system in a high-demand mining environment, ensuring its continuous operation. Additionally, I spearheaded the reconstruction of key modules within the ACQUIRE system, which were critical to homologation processes. I worked with .NET and Python for back-end development and optimized front-end applications using React and Angular, directly contributing to the operational efficiency and excellence at BHP."
+    },
+    {
+      "posicion": "IT Engineer Consultant at CityBank",
       "tiempo": "Apr 2022 - Jan 2023",
       "lugar": "Indra | Rio de Janeiro, Brasil (Home Office)",
       "cuerpo": [
@@ -25,7 +36,7 @@ export const expData =
       "descripcion": "During my time at Indra, I contributed to the development of critical banking modules using Java 11. My responsibilities included designing and implementing APIs, conducting database queries, and following strict testing protocols using TDD with tools like Mockito and Jtest. Working remotely, I collaborated with teams from different regions to ensure timely project delivery."
     },
     {
-      "posicion": "IT Engineer, FullStack Developer",
+      "posicion": "IT Engineer Consultant at Banco Santander",
       "tiempo": "Dec 2020 - Nov 2022",
       "lugar": "Qintess | Rio de Janeiro, Brasil / Santiago, Chile (Home Office)",
       "cuerpo": [
@@ -36,7 +47,7 @@ export const expData =
       "descripcion": "At Qintess, I was responsible for enhancing and maintaining critical modules for the banking industry. I spearheaded the migration of the Angular platform, improving performance and functionality. My role extended to mentoring team members, helping them navigate complex technical challenges while also contributing to the backend development using Java."
     },
     {
-      "posicion": "IT Engineer",
+      "posicion": "IT Engineer - Contractor at BCI",
       "tiempo": "Aug 2020 - Nov 2020",
       "lugar": "Kubos SPA | Santiago, Chile",
       "cuerpo": [
@@ -138,9 +149,9 @@ export const expData =
   es: 
   [
     {
-      "posicion": "Freelance Mobile Developer",
+      "posicion": "Desarrollador Freelance / Consultor IT",
       "tiempo": "Ene 2023 - Presente",
-      "lugar": "Desarrollador freelance | Chile - USA",
+      "lugar": "Freelance | Chile - EEUU",
       "cuerpo": [
         "Desarrollador en plataformas móviles basadas en Dart/Flutter, Kotlin, Kivy (Python) y Java.",
         "Creación y mantenimiento de aplicaciones móviles para plataformas Android e iOS.",
@@ -149,7 +160,18 @@ export const expData =
       "descripcion": "Como desarrollador móvil freelance, trabajé en la creación de aplicaciones móviles para plataformas Android e iOS utilizando diversas tecnologías como Dart/Flutter, Kotlin y Kivy en Python. Gestioné el proceso de desarrollo de principio a fin, incluyendo diseño, desarrollo y mantenimiento, adaptándome a las necesidades específicas de los clientes en EE. UU. y Chile."
     },
     {
-      "posicion": "Ingeniero TI, Desarrollador FullStack",
+      "posicion": "Consultor de Ingeniería de Software en BHP",
+      "tiempo": "Sept 2024 - Abr 2025",
+      "lugar": "BHP | Chile (Home Office)",
+      "cuerpo": [
+        "Recuperación y liderazgo en la estabilización del sistema PT-SUITE, asegurando su continuidad operativa.",
+        "Reconstrucción de módulos preponderantes del sistema ACQUIRE para procesos de homologación críticos.",
+        "Entrega de soluciones en back-end utilizando .NET y Python, y mejoras de front-end con React y Angular."
+      ],
+      "descripcion": "En BHP, asumí la responsabilidad de recuperar y estabilizar el sistema PT-SUITE en un entorno minero de alta exigencia, asegurando su funcionamiento continuo. Además, lideré la reconstrucción de módulos clave del sistema ACQUIRE, fundamentales para los procesos de homologación. Trabajé utilizando tecnologías .NET y Python en el desarrollo de back-end, y React y Angular en la optimización de interfaces, contribuyendo directamente a la eficiencia operativa de BHP."
+    },
+    {
+      "posicion": "Ingeniero Consultor TI en CityBank",
       "tiempo": "Abr 2022 - Ene 2023",
       "lugar": "Indra | Río de Janeiro, Brasil (Home Office)",
       "cuerpo": [
@@ -160,7 +182,7 @@ export const expData =
       "descripcion": "Durante mi tiempo en Indra, contribuí al desarrollo de módulos bancarios críticos utilizando Java 11. Mis responsabilidades incluyeron el diseño e implementación de APIs, realización de consultas a bases de datos y el cumplimiento de estrictos protocolos de pruebas usando TDD con herramientas como Mockito y Jtest. Trabajando de forma remota, colaboré con equipos de diferentes regiones para asegurar la entrega oportuna de proyectos."
     },
     {
-      "posicion": "Ingeniero TI, Desarrollador FullStack",
+      "posicion": "Ingeniero Consultor TI en Banco Santander",
       "tiempo": "Dic 2020 - Nov 2022",
       "lugar": "Qintess | Río de Janeiro, Brasil / Santiago, Chile (Home Office)",
       "cuerpo": [
@@ -171,7 +193,7 @@ export const expData =
       "descripcion": "En Qintess, fui responsable de mejorar y mantener módulos críticos para la industria bancaria. Lideré la migración de la plataforma Angular, mejorando su rendimiento y funcionalidad. También brindé mentoría a miembros del equipo, ayudándolos a resolver desafíos técnicos complejos, además de contribuir al desarrollo backend con Java."
     },
     {
-      "posicion": "Ingeniero TI",
+      "posicion": "Ingeniero IT, Contractor en BCI",
       "tiempo": "Ago 2020 - Nov 2020",
       "lugar": "Kubos SPA | Santiago, Chile",
       "cuerpo": [
@@ -296,7 +318,7 @@ export const expSkills =
       { "detail": "Liderazgo y entrega de sistemas complejos de software"}
     ],
     },
-    professionals: {
+  professionals: {
       en: 
       [
         { "detail": "Effective communication"},
@@ -312,7 +334,7 @@ export const expSkills =
         { "detail": "Buena gestión del tiempo" }
       ]
     },
-    interests: {
+  interests: {
       en: 
       [
         { "detail": "RTS Games"},
@@ -330,8 +352,7 @@ export const expSkills =
         { "detail": "Ciclismo"}
       ]
     },
-
-    languages: {
+  languages: {
       en: 
       [
         {"lang": "English"," level": "Professional"},
@@ -348,7 +369,7 @@ export const expSkills =
       ]
     },
 
-    education: {
+  education: {
       en: 
       [
         {"career": "Bachelor's Degree in Computer Science and Engineering","university": "INACAP", "duration": "2008 - 2013"},
@@ -360,7 +381,7 @@ export const expSkills =
         {"career": "Ingeneiero Civil Industrial","university": "UNAB", "duration": "2020 - 2024"},
       ]
     },
-    awards: {
+  awards: {
       default: 
       [
         { "detail": "Linux Operating system - RH024"},
