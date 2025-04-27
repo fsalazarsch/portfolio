@@ -1,5 +1,5 @@
 import React from "react";
-import { expData } from "../data/experiences";
+import { expData } from "../data/resumeData";
 
 export const Experiences = () => {
 
@@ -7,7 +7,17 @@ export const Experiences = () => {
     return {__html: innerHtml}
   }
 
-  const experiences = expData.en;
+  var experiences = {};
+  const lang = localStorage.getItem('language') || 'en';
+  if(lang === "es")
+    experiences = expData.es;
+  else{
+    if(lang === "pt")
+    experiences = expData.pt;
+  else
+    experiences = expData.en;
+  }
+  
 
   return (
     <>

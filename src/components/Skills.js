@@ -20,7 +20,7 @@ export const Skills = () => {
                 <div className="item-inner">
                 <div className="item-icon">
                   <i className={data.icon[0]}></i>
-                    && <i className={data.icon[1]}></i>}
+                  {data.icon[1] && <i className={data.icon[1]}></i>}
                   {data.icon[2] && <i className={data.icon[2]}></i>}
                   {data.icon[3] && <i className={data.icon[3]}></i>}
                   {data.icon[4] && <i className={data.icon[4]}></i>}

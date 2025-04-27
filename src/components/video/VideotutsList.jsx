@@ -1,9 +1,10 @@
 import React from "react";
-import { videotut } from "../data/en/videotutorials";
+import { videotutList } from "../../data/en/videotutorials";
 import { Link } from 'react-router-dom';
+import { timepassed } from '../../utils/dateutils';
 
 
-export const Videotuts = () => {
+export const VideotutsList = () => {
 
   function setInnnerHtml(innerHtml){
     return {__html: innerHtml}
@@ -12,13 +13,13 @@ export const Videotuts = () => {
 
   return (
     <>
-      {videotut.map((data, key) => {
+      {videotutList.map((data, key) => {
         return (
             <div className="col-md-4 mb-3">
             <div className="card blog-post-card">
               <img
                 className="card-img-top"
-                src= {`./portfolio/assets/img/${data.image}`}
+                src= {`./portfolio/assets/img/videotuts/${data.image}`}
                 alt="image"
               />
               <div className="card-body">
@@ -40,7 +41,7 @@ export const Videotuts = () => {
                 </p>
               </div>
               <div className="card-footer">
-                <small className="text-muted">{data.date}</small>
+                <small className="text-muted">{timepassed(data.date)}</small>
               </div>
             </div>
             </div>

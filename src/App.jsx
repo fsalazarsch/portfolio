@@ -2,15 +2,16 @@ import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Index from './components/Index';
-import Portfolio from './components/Portfolio';
-import Resume from './components/Resume';
-import Blog from './components/Blog';
-import Contact from './components/Contact';
-import BlogDetail from './components/BlogDetail';
-import ProjectDetail from './components/ProjectDetail';
-import VideoTut from './components/VideoTut';
-import VideoDetail from './components/VideoDetail';
+import Index from './pages/Index';
+import Portfolio from './pages/Portfolio';
+import Resume from './pages/Resume';
+import Blog from './pages/Blog';
+import BlogDetail from './components/blog/BlogDetailtemplate';
+import ProjectDetail from './components/portfolio/ProjectDetail';
+import VideoTut from './pages/VideoTut';
+import VideoDetail from './components/video/VideoDetail';
+import SwaggerDoc from './components/swagger/swaggerDoc';
+
 
 function App() {
   return (
@@ -22,12 +23,13 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="/blogDetail" element={<BlogDetail />} />
-          <Route path="/projectDetail" element={<ProjectDetail />} />
+          <Route path="/projectDetail/:title" element={<ProjectDetail />} />
           <Route path="/videotut" element={<VideoTut />} />
           <Route path="/videoDetail" element={<VideoDetail />} />
           <Route path="/videoDetail/:title" element={<VideoDetail />} />
+          <Route path="/api-docs" element={<SwaggerDoc />} />
+
         </Routes>
       </div>
     </Router>

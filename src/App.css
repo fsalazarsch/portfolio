@@ -30,3 +30,7 @@
 .profile-image{
   width: 250px;
 }
+
+span.url{
+  display : none;
+}

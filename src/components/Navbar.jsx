@@ -2,7 +2,38 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 class Navbar extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      indexData: null,
+      lang: localStorage.getItem('language') || 'en',
+    };
+  }
+
+  componentDidMount() {
+    const { lang } = this.state;
+    import(`../data/${lang}/index.json`)
+      .then((module) => {
+        const data = module.default;
+        this.setState({ indexData: data });
+        console.log(data)
+      })
+      .catch((err) => {
+        console.error("No se pudo cargar la data:", err);
+      });
+  }
+
+  setInnnerHtml(innerHtml) {
+    return { __html: innerHtml };
+  }
+
   render() {
+    const { indexData } = this.state;
+    if (!indexData) {
+        return <p>Loading...</p>; // O cualquier componente de carga
+      }
+
     return (
       <header className="header text-center">
         <div className="force-overflow">
@@ -53,7 +84,7 @@ class Navbar extends React.Component {
               <hr />
 
                 <li className="nav-item">
-                  <Link className="nav-link" to="/"><i className="fas fa-user fa-fw me-2"></i>About Me</Link>
+                  <Link className="nav-link" to="/"><i className="fas fa-user fa-fw me-2"></i>{indexData.about_me}</Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/portfolio"><i className="fas fa-laptop-code fa-fw me-2"></i>Portfolio</Link>
@@ -68,7 +99,7 @@ class Navbar extends React.Component {
                   <Link className="nav-link" to="/videotut"><i className="fas fa-video fa-fw me-2"></i>Videos</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/contact"><i className="fas fa-envelope-open-text fa-fw me-2"></i>Contact</Link>
+                  <Link className="nav-link" to="/api-docs"><i className="fas fa-cog fa-fw me-2"></i>API</Link>
                 </li>
               </ul>
             </div>
@@ -77,7 +108,7 @@ class Navbar extends React.Component {
                     <div className="dark-mode-toggle text-center w-100">
               <hr className="mb-4" />
               <h4 className="toggle-name mb-3">
-                <i className="fas fa-adjust me-1"></i>Dark Mode
+                <i className="fas fa-adjust me-1"></i>{indexData.dark_mode}
               </h4>
 
               <input className="toggle" id="darkmode" type="checkbox" />

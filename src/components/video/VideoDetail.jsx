@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
-import { videotut } from "../data/en/videotutorials";
+import { videotutList } from "../../data/en/videotutorials";
 
 function VideoDetail () {
 
   const { title } = useParams(); // Para obtener el título de la URL
-  const data = videotut.find((item) => item.title === decodeURIComponent(title));
+  const data = videotutList.find((item) => item.title === decodeURIComponent(title));
 
   console.log(data);
     return (

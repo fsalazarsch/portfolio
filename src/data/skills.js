@@ -155,7 +155,7 @@ export const skillsData =
         {
           icon: ["devicon-c-plain colored", "devicon-arduino-plain colored", "devicon-ruby-plain colored", "devicon-rails-plain colored"],
           title: "Tech Trials",
-          detail: "<table><tr><td>C</td><td>🟩🟩🟩⬜⬜</td></tr>\
+          detail: "<table><tr><td>C</td><td>🟩🟩🟩🟩⬜</td></tr>\
           <tr><td>Arduino</td><td>🟩🟩⬜⬜⬜</td></tr>\
           <tr><td>Ruby</td><td>🟩🟩🟨⬜⬜</td></tr>\
           <tr><td>RoR</td><td>🟩🟩⬜⬜⬜</td></tr>\

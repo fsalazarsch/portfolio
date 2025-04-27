@@ -1,12 +1,12 @@
 
-export const videotut = 
+export const videotutList = 
     
 [
     {
         "image": "curso_c.png",
         "title": "Videotutorial - C",
         "body": "lorem dolor sit ame",
-        "date": "29-11-2024",
+        "date": "2024-10-29",
         "content": {
             "detail": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean\
             commodo ligula eget dolor. Aenean massa. Cum sociis natoque\
@@ -44,7 +44,7 @@ export const videotut =
         "image": "man_file_extension.png",
         "title": "How to make a .man page",
         "body": "lorem dolor sit ame",
-        "date": "29-11-2024",
+        "date": "2023-11-20",
         "content": {
             "detail": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean\
             commodo ligula eget dolor. Aenean massa. Cum sociis natoque\
