@@ -1,14 +1,30 @@
 import React, { Component } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
-import { portfolioList } from "../../data/en/portfolio";
+import { portfolioList } from "../../data/portfolio";
 import { setInnnerHtml} from '../../utils/formatutils';
 
+  const lang = localStorage.getItem('language') || 'en';
+  let portfolios = [];
+  let view_details="";
+
+      if (lang === "es"){
+        portfolios = portfolios.concat(portfolioList.es || []);
+        view_details="Ver Detalles";
+      }
+      else if (lang === "pt"){
+        portfolios = portfolios.concat(portfolioList.pt || []);
+        view_details="Ver Detalhes";
+      }
+      else{
+      portfolios = portfolios.concat(portfolioList.en || []);
+      view_details="View Details";  
+    }
 
 
 function ProjectDetail() {
 
   const { title } = useParams(); // Para obtener el título de la URL
-  const data = portfolioList.find((item) => item.title === decodeURIComponent(title));
+  const data = portfolios.find((item) => item.title === decodeURIComponent(title));
 
     return (
 

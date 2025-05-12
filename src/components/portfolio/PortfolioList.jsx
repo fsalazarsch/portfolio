@@ -1,10 +1,29 @@
 import React from "react";
-import { portfolioList } from "../../data/en/portfolio";
+import { portfolioList } from "../../data/portfolio";
 import { Link } from 'react-router-dom';
 import { timepassed } from '../../utils/dateutils';
 
 
 export const PortfolioList = () => {
+
+  
+    const lang = localStorage.getItem('language') || 'en';
+    let portfolios = [];
+    let view_details="";
+  
+  
+      if (lang === "es"){
+        portfolios = portfolios.concat(portfolioList.es || []);
+        view_details="Ver Detalles";
+      }
+      else if (lang === "pt"){
+        portfolios = portfolios.concat(portfolioList.pt || []);
+        view_details="Ver Detalhes";
+      }
+      else{
+      portfolios = portfolios.concat(portfolioList.en || []);
+      view_details="View Details";  
+    }
 
   function setInnnerHtml(innerHtml){
     return {__html: innerHtml}
@@ -13,7 +32,7 @@ export const PortfolioList = () => {
 
   return (
     <>
-      {portfolioList.map((data) => {
+      {portfolios.map((data) => {
         return (
           <div className="isotope-item col-md-6 mb-5 mobileapp frontend">
             <div className="card project-card">
@@ -54,7 +73,7 @@ export const PortfolioList = () => {
                 <div className="link-mask-text">
                   <a className="btn btn-secondary" href={`/projectDetail/${data.title}`} >
                     <i className="fas fa-eye me-2" />
-                    View Detail
+                    {view_details}
                   </a>
                 </div>
               </div>

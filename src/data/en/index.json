@@ -16,7 +16,10 @@
     "interests": "Personal Interests",
     "projects": "Projects",
     "downlaod_pdf" : "Download PDF Version",
-    "link_resume": "https://drive.google.com/file/d/1gwjcyVS7i75IO9IHloBqNLoRxVF1VNXa/view?usp=drive_link"
+    "link_resume": "https://drive.google.com/file/d/1gwjcyVS7i75IO9IHloBqNLoRxVF1VNXa/view?usp=drive_link",
+    "summary_porfolio" : "Welcome to my online portfolio. Here, you'll find a selection of my personal projects and company projects that I am permitted to share. I'm currently adapting some of these projects to work with various frameworks.",
+    "video_title" : "Videotutorials",
+    "summary_videotutorials": "Welcome! In this section, you’ll find video tutorials and ideas. I'm working on adding more content — stay tuned for updates!<br>NOTE: the videos are in Spanish, but i will add additional information in English"
 
 
 

@@ -3,7 +3,38 @@ import { PortfolioList } from "../components/portfolio/PortfolioList";
 
 
 class Portfolio extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      indexData: null,
+      lang: localStorage.getItem('language') || 'en',
+    };
+  }
+
+  componentDidMount() {
+    const { lang } = this.state;
+    import(`../data/${lang}/index.json`)
+      .then((module) => {
+        const data = module.default;
+        this.setState({ indexData: data });
+        console.log(data)
+      })
+      .catch((err) => {
+        console.error("No se pudo cargar la data:", err);
+      });
+  }
+
+  setInnnerHtml(innerHtml) {
+    return { __html: innerHtml };
+  }
+
   render() {
+    const { indexData } = this.state;
+    if (!indexData) {
+        return <p>Loading...</p>; 
+      }
+
     return (
 
   <div className="main-wrapper">
@@ -12,14 +43,9 @@ class Portfolio extends Component {
         <h2 className="heading">Portfolio</h2>
         <div className="intro">
           <p>
-          Welcome to my online portfolio. Here, you'll find a selection of my personal projects and company projects that I am permitted to share. 
-          I'm currently adapting some of these projects to work with various frameworks.
+          {indexData.summary_porfolio}
           </p>
         </div>
-        <a className="btn btn-primary" href="contact.html" target="_blank">
-          <i className="fas fa-paper-plane me-2" />
-          Hire Me
-        </a>
       </div>
     </section>
     <section className="projects-list px-3 py-5 p-md-5">

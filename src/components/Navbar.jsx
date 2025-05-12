@@ -99,6 +99,9 @@ class Navbar extends React.Component {
                   <Link className="nav-link" to="/videotut"><i className="fas fa-video fa-fw me-2"></i>Videos</Link>
                 </li>
                 <li className="nav-item">
+                  <Link className="nav-link" to="/test"><i className="fas fa-file-code fa-fw me-2"></i>Test</Link>
+                </li>
+                <li className="nav-item">
                   <Link className="nav-link" to="/api-docs"><i className="fas fa-cog fa-fw me-2"></i>API</Link>
                 </li>
               </ul>

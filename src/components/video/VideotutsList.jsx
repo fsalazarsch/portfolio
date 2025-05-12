@@ -1,19 +1,30 @@
 import React from "react";
-import { videotutList } from "../../data/en/videotutorials";
+import { videotutList } from "../../data/videotutorials";
 import { Link } from 'react-router-dom';
 import { timepassed } from '../../utils/dateutils';
 
 
+  const lang = localStorage.getItem('language') || 'en';
+  let videotut = [];
+
+      if (lang === "es"){
+        videotut = videotut.concat(videotutList.es || []);
+      }
+      else if (lang === "pt"){
+        videotut = videotut.concat(videotutList.pt || []);
+      }
+      else{
+        videotut = videotut.concat(videotutList.en || []);
+    }
+
+
 export const VideotutsList = () => {
 
-  function setInnnerHtml(innerHtml){
-    return {__html: innerHtml}
-  }
 
 
   return (
     <>
-      {videotutList.map((data, key) => {
+      {videotut.map((data, key) => {
         return (
             <div className="col-md-4 mb-3">
             <div className="card blog-post-card">
@@ -21,6 +32,7 @@ export const VideotutsList = () => {
                 className="card-img-top"
                 src= {`./portfolio/assets/img/videotuts/${data.image}`}
                 alt="image"
+                style={{ maxHeight: "170px" }}
               />
               <div className="card-body">
                 <h5 className="card-title">

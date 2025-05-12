@@ -5,10 +5,16 @@ import Navbar from './components/Navbar';
 import Index from './pages/Index';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
+import Test from './pages/Test';
 import Blog from './pages/Blog';
-import BlogDetail from './components/blog/BlogDetailtemplate';
-import ProjectDetail from './components/portfolio/ProjectDetail';
 import VideoTut from './pages/VideoTut';
+
+import BlogDetail from './components/blog/BlogDetailtemplate';
+
+import TestDetail from './components/test/TestDetail';
+
+import ProjectDetail from './components/portfolio/ProjectDetail';
+
 import VideoDetail from './components/video/VideoDetail';
 import SwaggerDoc from './components/swagger/swaggerDoc';
 
@@ -28,6 +34,9 @@ function App() {
           <Route path="/videotut" element={<VideoTut />} />
           <Route path="/videoDetail" element={<VideoDetail />} />
           <Route path="/videoDetail/:title" element={<VideoDetail />} />
+          <Route path="/test" element={<Test />} />
+          <Route path="/test/:company" element={<TestDetail />} />
+
           <Route path="/api-docs" element={<SwaggerDoc />} />
 
         </Routes>

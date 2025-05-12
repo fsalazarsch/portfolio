@@ -32,7 +32,7 @@ class Index extends Component {
   render() {
     const { indexData } = this.state;
     if (!indexData) {
-        return <p>Loading...</p>; // O cualquier componente de carga
+        return <p>Loading...</p>; 
       }
 
     return (
@@ -81,9 +81,6 @@ class Index extends Component {
                 <div className="row">
                     <Skills />
                 </div>
-                <div className="text-center py-3"><a href="services.html" className="btn btn-primary"><i className="fas fa-arrow-alt-circle-right me-2"></i>Services &amp; Pricing
-                    
-                </a></div>
                 
             </div>
         </section>

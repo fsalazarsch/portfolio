@@ -1,11 +1,26 @@
 import React, { Component } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
-import { videotutList } from "../../data/en/videotutorials";
+import { videotutList } from "../../data/videotutorials";
 
 function VideoDetail () {
 
+  const lang = localStorage.getItem('language') || 'en';
+  let videotut = [];
+
+      if (lang === "es"){
+        videotut = videotut.concat(videotutList.es || []);
+      }
+      else if (lang === "pt"){
+        videotut = videotut.concat(videotutList.pt || []);
+      }
+      else{
+        videotut = videotut.concat(videotutList.en || []);
+    }
+
+
   const { title } = useParams(); // Para obtener el título de la URL
-  const data = videotutList.find((item) => item.title === decodeURIComponent(title));
+  const data = videotut.find((item) => item.title === decodeURIComponent(title));
+  
 
   console.log(data);
     return (
@@ -19,7 +34,7 @@ function VideoDetail () {
             <span className="date">{data.date}</span>
             <span className="comment">
               <a className="text-link" href="#">
-                No comments for now
+                
               </a>
             </span>
           </div>
@@ -34,8 +49,8 @@ function VideoDetail () {
           <table className="table table-striped table-hover">
             <thead>
               <tr>
-                <th scope="col">Name</th>
-                <th scope="col">Time</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Duración</th>
                 <th scope="col"> <i className="fa-solid fa-terminal" /> </th>
               </tr>
             </thead>
@@ -77,6 +92,7 @@ function VideoDetail () {
             />
           </div>
         </div>
+           {/*
         <nav className="blog-nav nav nav-justified my-5">
           <a className="nav-link-prev nav-item nav-link rounded-left" href="#">
             Previous
@@ -87,6 +103,7 @@ function VideoDetail () {
             <i className="arrow-next fas fa-long-arrow-alt-right" />
           </a>
         </nav>
+        */}
       </div>
     </article>
   </div>
