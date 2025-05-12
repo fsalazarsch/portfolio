@@ -7,12 +7,11 @@ class Test extends Component {
 <>
   <div className="main-wrapper">
     <section className="cta-section theme-bg-light py-5">
-      <div className="container text-center single-col-max-width">
-        <h2 className="heading">A Blog About Software Development And Life</h2>
-        <div className="intro">
-          Welcome to my blog. Subscribe and get my latest blog post in your
-          inbox.
-        </div>
+      <div className="container single-col-max-width">
+        <h2 className="heading text-center">Pruebas técnicas</h2>
+        <div style={{'text-align': 'justify'}}>
+        Aquí encontrarás una recopilación de pruebas técnicas que he realizado a lo largo del tiempo. Cada una incluye su enunciado original junto con mi propuesta de solución. En algunos casos, también he desarrollado forks utilizando otras tecnologías para explorar diferentes enfoques o mejorar aspectos específicos. Este apartado refleja tanto mi proceso de razonamiento como mi capacidad para adaptarme a distintos entornos y requerimientos técnicos <br/>
+        Si deseas que desarrolle alguna de éstas en otras tecnoloías, escribeme</div>
         <div className="single-form-max-width pt-3 mx-auto">
           <form className="signup-form row g-2 g-lg-2 align-items-center">
             <div className="col-12 col-md-9">
