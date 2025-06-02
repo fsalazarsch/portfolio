@@ -16,19 +16,19 @@ class Test extends Component {
           <form className="signup-form row g-2 g-lg-2 align-items-center">
             <div className="col-12 col-md-9">
               <label className="sr-only" htmlFor="semail">
-                Your email
+                
               </label>
               <input
                 type="email"
                 id="semail"
                 name="semail1"
                 className="form-control me-md-1 semail"
-                placeholder="Enter email"
+                placeholder="Search ..."
               />
             </div>
             <div className="col-12 col-md-2">
               <button type="submit" className="btn btn-primary">
-                Subscribe
+              <i class="fa-solid fa-magnifying-glass"></i>
               </button>
             </div>
           </form>
