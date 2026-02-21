@@ -1,4 +1,4 @@
 
-export const setInnnerHtml = (innerHtml) => {
+export const setInnerHtml = (innerHtml) => {
     return {__html: innerHtml}
 }

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { setInnnerHtml} from '../../utils/formatutils';
+import { setInnerHtml} from '../../utils/formatutils';
 
 function ProjectDetail() {
   const [portfolios, setPortfolios] = useState([]);
@@ -156,7 +156,7 @@ function ProjectDetail() {
         {/*//row*/}
       </div>
       {/*//project-meta*/}
-      <div dangerouslySetInnerHTML = {setInnnerHtml(data.content.project.overview)}></div>
+      <div dangerouslySetInnerHTML = {setInnerHtml(data.content.project.overview)}></div>
     </div>
   </section>
   <section className="promo-section theme-bg-light py-5 text-center">

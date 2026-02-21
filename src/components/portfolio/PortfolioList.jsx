@@ -58,7 +58,7 @@ export const PortfolioList = ({ activeFilter }) => {
                   <img
                     src={`./portfolio/assets/img/portfolio/${data.image}`}
                     className="card-img"
-                    alt="image"
+                    alt={data.title}
                   />
                 </div>
                 <div className="col-12 col-xl-7">

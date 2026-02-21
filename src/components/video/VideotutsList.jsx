@@ -60,7 +60,7 @@ export const VideotutsList = () => {
               <img
                 className="card-img-top"
                 src= {`./portfolio/assets/img/videotuts/${data.image}`}
-                alt="image"
+                alt={data.title}
                 style={{ maxHeight: "170px" }}
               />
               <div className="card-body">

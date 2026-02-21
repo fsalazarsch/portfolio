@@ -67,13 +67,13 @@ function VideoDetail () {
               
                 video.available === false ? (
                   <tr>
-                  <td scope="row" style={{color: 'gray'}}><i className="fas fa-regular fa-circle-play" /> &nbsp;{video.name}</td>
+                  <td style={{color: 'gray'}}><i className="fas fa-regular fa-circle-play" /> &nbsp;{video.name}</td>
                   <td style={{color: 'gray'}}>({video.time})</td>
                   <td style={{color: 'gray'}}> <i className="fab fa-brand fa-github" /></td>
                   </tr>
                 ) : (
                   <tr>
-                  <td scope="row" ><i className="fas fa-regular fa-circle-play" /> &nbsp;{video.name}</td>
+                  <td><i className="fas fa-regular fa-circle-play" /> &nbsp;{video.name}</td>
                   <td>({video.time})</td>
                   <td><a href={video.code}><i className="fab fa-brand fa-github" /></a></td>
                 </tr>
@@ -91,6 +91,7 @@ function VideoDetail () {
           </p>
           <div className="ratio ratio-16x9">
             <iframe
+              title={`${data.title} playlist`}
               width={560}
               height={315}
               src={`https://www.youtube.com/embed/videoseries?list=${data.content.playlistId}`}

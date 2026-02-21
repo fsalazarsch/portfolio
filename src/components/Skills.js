@@ -3,7 +3,7 @@ import { skillsData } from "../data/skills";
 
 export const Skills = () => {
 
-  function setInnnerHtml(innerHtml){
+  function setInnerHtml(innerHtml){
     return {__html: innerHtml}
   }
 
@@ -26,7 +26,7 @@ export const Skills = () => {
                   {data.icon[4] && <i className={data.icon[4]}></i>}
                 </div>            
                 <h3 className="item-title">{data.title}</h3>
-                    <div className="item-desc" dangerouslySetInnerHTML = {setInnnerHtml(data.detail)} />
+                    <div className="item-desc" dangerouslySetInnerHTML = {setInnerHtml(data.detail)} />
                 </div>
             </div>
 

@@ -25,7 +25,7 @@ class Index extends Component {
         });
     }
   
-    setInnnerHtml(innerHtml) {
+    setInnerHtml(innerHtml) {
       return { __html: innerHtml };
     }
 

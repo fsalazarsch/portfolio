@@ -3,7 +3,7 @@ import { expData } from "../data/resumeData";
 
 export const Experiences = () => {
 
-  function setInnnerHtml(innerHtml){
+  function setInnerHtml(innerHtml){
     return {__html: innerHtml}
   }
 

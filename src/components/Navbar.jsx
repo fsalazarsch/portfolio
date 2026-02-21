@@ -139,7 +139,7 @@ class Navbar extends React.Component {
     }
   }
 
-  setInnnerHtml(innerHtml) {
+  setInnerHtml(innerHtml) {
     return { __html: innerHtml };
   }
 
@@ -232,6 +232,7 @@ class Navbar extends React.Component {
         className="btn btn-primary"
         href={indexData.link_resume}
         target="_blank"
+        rel="noreferrer"
       >
         <i className="fas fa-file-pdf me-2" />
         {indexData.downlaod_pdf}

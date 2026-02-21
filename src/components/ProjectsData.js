@@ -16,7 +16,7 @@ export const ProjectsList = ({ starred }) => {
     else
       projects = projects.concat(projectsData.en || []);
 
-      if(starred == "true")
+      if(starred === "true")
         projects = projects.filter(item => item.star === true);
 
     return (

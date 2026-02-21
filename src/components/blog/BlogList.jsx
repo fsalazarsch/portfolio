@@ -37,7 +37,7 @@ export const BlogList = () => {
     setCurrentPage(1);
   }, [blogList]);
 
-  function setInnnerHtml(innerHtml){
+  function setInnerHtml(innerHtml){
     return {__html: innerHtml}
   }
 

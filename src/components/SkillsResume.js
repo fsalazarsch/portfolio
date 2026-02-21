@@ -2,7 +2,7 @@ import React from "react";
 import { expSkills } from "../data/resumeData";
 
 export const SkillsResume = ({ typeSkills }) => {
-  function setInnnerHtml(innerHtml) {
+  function setInnerHtml(innerHtml) {
     return { __html: innerHtml };
   }
 

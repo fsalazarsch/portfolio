@@ -27,7 +27,7 @@ class Resume extends Component {
       });
   }
 
-  setInnnerHtml(innerHtml) {
+  setInnerHtml(innerHtml) {
     return { __html: innerHtml };
   }
 
@@ -88,6 +88,7 @@ class Resume extends Component {
                 className="theme-link"
                 href="https://themes.3rdwavemedia.com/resources/sketch-template/resume-sketch-sketch-resume-template-for-software-developers/"
                 target="_blank"
+                rel="noreferrer"
               >
               </a>
               {indexData.resume_summary}

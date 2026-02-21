@@ -49,7 +49,7 @@ export const TestList = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  function setInnnerHtml(innerHtml){
+  function setInnerHtml(innerHtml){
     return {__html: innerHtml}
   }
 
