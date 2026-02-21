@@ -2,9 +2,7 @@ import React from "react";
 import { expSkills } from "../data/resumeData";
 
 export const SkillsResume = ({ typeSkills }) => {
-  function setInnerHtml(innerHtml) {
-    return { __html: innerHtml };
-  }
+
 
   const lang = localStorage.getItem('language') || 'en';
   let skillsresume = [];
@@ -95,7 +93,7 @@ export const SkillsResume = ({ typeSkills }) => {
 
 
 
-  if(typeSkills == "languages"){
+  if(typeSkills === "languages"){
     return (
       <>
         {skillsresume.map((data, key) => {

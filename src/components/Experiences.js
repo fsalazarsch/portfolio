@@ -3,9 +3,6 @@ import { expData } from "../data/resumeData";
 
 export const Experiences = () => {
 
-  function setInnerHtml(innerHtml){
-    return {__html: innerHtml}
-  }
 
   var experiences = {};
   const lang = localStorage.getItem('language') || 'en';
