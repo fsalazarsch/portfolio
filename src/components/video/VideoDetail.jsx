@@ -1,25 +1,33 @@
-import React, { Component } from 'react';
-import { useLocation, useParams } from 'react-router-dom';
-import { videotutList } from "../../data/videotutorials";
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 
 function VideoDetail () {
+  const [videotut, setVideotut] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const { title } = useParams();
 
-  const lang = localStorage.getItem('language') || 'en';
-  let videotut = [];
+  useEffect(() => {
+    const lang = localStorage.getItem('language') || 'en';
+    import(`../../data/${lang}/videotutorials.json`)
+      .then((module) => {
+        setVideotut(module.default);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("No se pudo cargar la data de videotutorials:", err);
+        setLoading(false);
+      });
+  }, []);
 
-      if (lang === "es"){
-        videotut = videotut.concat(videotutList.es || []);
-      }
-      else if (lang === "pt"){
-        videotut = videotut.concat(videotutList.pt || []);
-      }
-      else{
-        videotut = videotut.concat(videotutList.en || []);
-    }
+  if (loading) {
+    return <p>Loading...</p>;
+  }
 
-
-  const { title } = useParams(); // Para obtener el título de la URL
   const data = videotut.find((item) => item.title === decodeURIComponent(title));
+  
+  if (!data) {
+    return <p>Video not found</p>;
+  }
   
 
   console.log(data);

@@ -47,6 +47,29 @@ export const projectsData =
           "photo": null,
           "star": true
         }
+      ],
+      pt:[
+        {
+          "title": "Calculadora Científica / Financeira",
+          "details": "Projeto de design e desenvolvimento de uma calculadora científica e financeira inspirada nos modelos Casio. O dispositivo contará com funções avançadas matemáticas, estatísticas e financeiras, com uma interface intuitiva e uma tela de alta precisão.",
+          "extra": "Código Aberto (Atrasado)",
+          "photo": null,
+          "star": true
+        },
+        {
+          "title": "Impressora Braille com Arduino",
+          "details": "Projeto de design e desenvolvimento de uma impressora Braille utilizando tecnologia Arduino. O dispositivo permitirá uma impressão acessível e de baixo custo para usuários com deficiência visual, combinando design compacto, precisão e facilidade de uso. Ideal para instituições educacionais, bibliotecas e uso pessoal.",
+          "extra": "Código Aberto",
+          "photo": null,
+          "star": true
+        },
+        {
+          "title": "Tejina DS (Projeto de Carreira)",
+          "details": "Desenvolvimento de uma aplicação para o aprendizado do japonês, compatível com dispositivos Android e Nintendo DS. O app contará com lições interativas, jogos de vocabulário e prática de escrita usando entrada tátil e caneta óptica. Projetada para estudantes de todos os níveis.",
+          "extra": "Código Aberto (Em reconstrução)",
+          "photo": null,
+          "star": true
+        }
       ]
     };
   

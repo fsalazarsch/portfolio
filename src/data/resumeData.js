@@ -291,6 +291,152 @@ export const expData =
       ],
       "descripcion": "En Neoingen Ltda., me enfoqué en el desarrollo de páginas web utilizando PHP puro, sin depender de frameworks, e integré servicios web basados en Java para mejorar las capacidades de la plataforma. Además, implementé funcionalidades de frontend usando JavaScript, jQuery y Mootools, mejorando la experiencia del usuario en las aplicaciones web."
     }
+  ],
+  pt: 
+  [
+    {
+      "posicion": "Desenvolvedor Freelance / Consultor de TI",
+      "tiempo": "Jan 2023 - Presente",
+      "lugar": "Desenvolvedor Freelance | Chile - EUA",
+      "cuerpo": [
+        "Desenvolvedor em plataformas móveis baseadas em Dart/Flutter, Kotlin, Kivy (Python) e Java.",
+        "Criar e manter aplicações móveis para plataformas Android e iOS.",
+        "Trabalhou com clientes dos EUA e Chile para entregar soluções móveis personalizadas."
+      ],
+      "descripcion": "Como desenvolvedor móvel freelance, trabalhei na criação de aplicações móveis para plataformas Android e iOS usando uma variedade de tecnologias como Dart/Flutter, Kotlin e Kivy em Python. Gerenciei o processo de desenvolvimento de ponta a ponta, incluindo design, desenvolvimento e manutenção, adaptando-me às necessidades específicas dos clientes nos EUA e Chile."
+    },
+    {
+      "posicion": "Consultor de Engenharia de Software na BHP",
+      "tiempo": "Set 2024 - Abr 2025",
+      "lugar": "BHP | Chile (Home Office)",
+      "cuerpo": [
+        "Liderou a recuperação e estabilização do sistema PT-SUITE, garantindo sua continuidade operacional.",
+        "Reconstruiu módulos-chave do sistema ACQUIRE para apoiar processos críticos de homologação.",
+        "Entregou soluções back-end usando .NET e Python, e melhorou aplicações front-end com React e Angular."
+      ],
+      "descripcion": "Na BHP, fui responsável por liderar a recuperação e estabilização do sistema PT-SUITE em um ambiente de mineração de alta demanda, garantindo sua operação contínua. Além disso, liderei a reconstrução de módulos-chave dentro do sistema ACQUIRE, que eram críticos para processos de homologação. Trabalhei com .NET e Python para desenvolvimento back-end e otimizei aplicações front-end usando React e Angular, contribuindo diretamente para a eficiência operacional e excelência na BHP."
+    },
+    {
+      "posicion": "Consultor de Engenharia de TI no CityBank",
+      "tiempo": "Abr 2022 - Jan 2023",
+      "lugar": "Indra | Rio de Janeiro, Brasil (Home Office)",
+      "cuerpo": [
+        "Desenvolveu módulos para o setor bancário usando Java 11.",
+        "Gerenciou desenvolvimento de API e consultas de banco de dados com Oracle e AS400.",
+        "Utilizou metodologias TDD com Mockito e Jtest para testes unitários."
+      ],
+      "descripcion": "Durante meu tempo na Indra, contribuí para o desenvolvimento de módulos bancários críticos usando Java 11. Minhas responsabilidades incluíram projetar e implementar APIs, realizar consultas de banco de dados e seguir protocolos rigorosos de teste usando TDD com ferramentas como Mockito e Jtest. Trabalhando remotamente, colaborei com equipes de diferentes regiões para garantir a entrega oportuna dos projetos."
+    },
+    {
+      "posicion": "Consultor de Engenharia de TI no Banco Santander",
+      "tiempo": "Dez 2020 - Nov 2022",
+      "lugar": "Qintess | Rio de Janeiro, Brasil / Santiago, Chile (Home Office)",
+      "cuerpo": [
+        "Trabalhou em módulos do setor bancário usando Java 11 para desenvolvimento backend.",
+        "Liderou a migração do Angular da versão 6.x para 12.x para o frontend.",
+        "Forneceu mentoria na plataforma Qintess para entregar soluções de alta qualidade."
+      ],
+      "descripcion": "Na Qintess, fui responsável por melhorar e manter módulos críticos para a indústria bancária. Liderei a migração da plataforma Angular, melhorando desempenho e funcionalidade. Meu papel se estendeu a orientar membros da equipe, ajudando-os a navegar desafios técnicos complexos, além de contribuir para o desenvolvimento backend usando Java."
+    },
+    {
+      "posicion": "Engenheiro de TI - Contratado na BCI",
+      "tiempo": "Ago 2020 - Nov 2020",
+      "lugar": "Kubos SPA | Santiago, Chile",
+      "cuerpo": [
+        "Focou em módulos do setor bancário usando Java (1.8) como backend.",
+        "Desenvolveu soluções frontend com Angular e gerenciou bancos de dados.",
+        "Usou MySQL e MongoDB para armazenamento e recuperação de dados."
+      ],
+      "descripcion": "Como parte da Kubos SPA, trabalhei no desenvolvimento backend usando Java (1.8) e forneci soluções frontend com Angular. Minhas responsabilidades principais foram implementar funcionalidades baseadas em banco de dados usando MySQL e MongoDB, garantindo integração suave entre módulos frontend e backend."
+    },
+    {
+      "posicion": "Desenvolvedor Fullstack (Java, Android, IOS)",
+      "tiempo": "Dez 2019 - Jun 2020",
+      "lugar": "Lealtad 360 | Santiago, Chile",
+      "cuerpo": [
+        "Desenvolveu soluções de fidelidade de clientes para móvel usando Java, Angular e Kotlin.",
+        "Construiu aplicações híbridas com Ionic e consumiu APIs em Java e PHP.",
+        "Liderou sessões de coaching para melhorar processos de desenvolvimento usando Kanban e Scrum."
+      ],
+      "descripcion": "Na Lealtad 360, desenvolvi programas de fidelidade móvel para clientes, utilizando uma combinação de Java para backend e Ionic/Angular/Kotlin para frontend. Desempenhei um papel crucial na melhoria dos processos de desenvolvimento ao orientar a equipe em metodologias Kanban e Scrum, resultando em fluxos de trabalho mais eficientes."
+    },
+    {
+      "posicion": "Tech Leader, Desenvolvedor Fullstack",
+      "tiempo": "Ago 2017 - Nov 2019",
+      "lugar": "Bindex | Santiago, Chile",
+      "cuerpo": [
+        "Liderou o desenvolvimento de plataformas financeiras usando Flask, Django e Yii2.",
+        "Aplicou técnicas de scraping para fornecer informações em tempo real aos usuários.",
+        "Gerenciou administração de banco de dados usando MySQL e MongoDB."
+      ],
+      "descripcion": "Na Bindex, liderei uma equipe responsável pelo desenvolvimento de plataformas financeiras usando várias tecnologias, incluindo Flask, Django e Yii2. Projetei sistemas que aproveitavam scraping para entregar dados em tempo real aos usuários, e também assumi a gestão de banco de dados, garantindo que MySQL e MongoDB fossem usados efetivamente para lidar com grandes conjuntos de dados."
+    },
+    {
+      "posicion": "Tech Leader, Desenvolvedor Fullstack (Django, AWS Amazon Cloud)",
+      "tiempo": "Mai 2016 - Jun 2017",
+      "lugar": "Connectus | Santiago, Chile",
+      "cuerpo": [
+        "Planejou e migrou uma plataforma de entrega de SMS e Email de PHP para Django.",
+        "Migrou infraestrutura de hospedagem para AWS, melhorando escalabilidade e desempenho.",
+        "Implementou funcionalidades de SMS usando serviços Amazon, melhorando sistemas de comunicação."
+      ],
+      "descripcion": "Na Connectus, liderei um projeto de migração chave, transitando a plataforma de entrega de SMS e email de PHP para Django. Também supervisionei a migração de serviços de hospedagem para AWS, melhorando significativamente o desempenho e escalabilidade da plataforma. Meu papel envolveu implementar funcionalidades de SMS usando a suíte de serviços da Amazon, fornecendo um sistema de comunicação mais confiável para a empresa."
+    },
+    {
+      "posicion": "Tech Leader, Desenvolvedor Fullstack (Desenvolvedor IOS / Android)",
+      "tiempo": "Jan 2014 - Abr 2018",
+      "lugar": "City Express | Santiago, Chile",
+      "cuerpo": [
+        "Automatizou processos desenvolvendo plataformas web e móveis do zero.",
+        "Construiu um sistema de administração para dispositivos móveis usando Java e Swift.",
+        "Manteve um sistema Balance Score Card, integrando feedback do usuário em melhorias da plataforma."
+      ],
+      "descripcion": "No meu papel na City Express, fui responsável por desenvolver plataformas web e móveis do zero, automatizando vários processos que melhoraram significativamente a eficiência da empresa. Meu trabalho incluiu construir um sistema de administração usando Java e Swift, projetado para ser gerenciado via dispositivos móveis, além de manter um sistema Balance Score Card para rastrear o progresso e integrar feedback do usuário."
+    },
+    {
+      "posicion": "Engenheiro de TI, Desenvolvedor Freelance",
+      "tiempo": "Jun 2013 - Ago 2013",
+      "lugar": "Hostname | Santiago, Chile",
+      "cuerpo": [
+        "Personalizou soluções CMS usando Zend Framework.",
+        "Implementou novas funcionalidades em WHCMS e CakePHP para melhorar a funcionalidade.",
+        "Gerenciou infraestrutura de servidor CentOS, garantindo desempenho ótimo."
+      ],
+      "descripcion": "Como desenvolvedor freelance na Hostname, trabalhei na personalização de plataformas CMS usando o Zend Framework, implementando novas soluções e funcionalidades em WHCMS e CakePHP. Além disso, fui responsável por gerenciar infraestrutura de servidor baseada em CentOS, garantindo operações suaves e desempenho de servidores hospedados."
+    },
+    {
+      "posicion": "Desenvolvedor Backend PHP, Mobile (estágio)",
+      "tiempo": "Nov 2012 - Jan 2013",
+      "lugar": "Larrain Vial Ltd. | Santiago, Chile",
+      "cuerpo": [
+        "Desenvolveu uma rede social interna usando PHP, SQL Server e jQuery.",
+        "Propôs novos plugins e addons para estender a funcionalidade da plataforma.",
+        "Trabalhou em estreita colaboração com membros da equipe para garantir integração perfeita de novas funcionalidades."
+      ],
+      "descripcion": "Durante meu estágio na Larrain Vial, desenvolvi uma rede social interna usando PHP, SQL Server e jQuery. Minhas responsabilidades incluíram propor novas funcionalidades e plugins para melhorar a funcionalidade da plataforma, garantindo colaboração suave com outros membros da equipe para integrar essas soluções."
+    },
+    {
+      "posicion": "Desenvolvedor Freelance",
+      "tiempo": "Set 2011 - Abr 2014",
+      "lugar": "Desenvolvedor Freelance | Santiago, Chile",
+      "cuerpo": [
+        "Trabalhou em múltiplas plataformas para RH, design e serviços públicos.",
+        "Desenvolveu usando PHP, Python e Java, aplicando vários frameworks.",
+        "Implementou metodologias ágeis como Kanban e Scrum para gestão de projetos."
+      ],
+      "descripcion": "Como desenvolvedor freelance, enfrentei vários projetos em diferentes setores, incluindo recursos humanos, design e serviços públicos. Minha expertise técnica abrangeu várias linguagens como PHP, Python e Java, junto com frameworks que me permitiram entregar soluções personalizadas. Gerenciei projetos usando metodologias ágeis, garantindo entregas efetivas e oportunas."
+    },
+    {
+      "posicion": "Desenvolvedor (Java, XML, PHP)",
+      "tiempo": "Jan 2011 - Abr 2011",
+      "lugar": "Neoingen Ltda. | Santiago, Chile",
+      "cuerpo": [
+        "Desenvolveu páginas web em PHP sem frameworks.",
+        "Integrou serviços web baseados em Java em plataformas web.",
+        "Utilizou JavaScript, jQuery e Mootools para melhorias no frontend."
+      ],
+      "descripcion": "Na Neoingen Ltda., foquei no desenvolvimento de páginas web usando PHP puro, sem depender de frameworks, e integrei serviços web baseados em Java para melhorar as capacidades da plataforma. Além disso, implementei funcionalidades de frontend usando JavaScript, jQuery e Mootools, melhorando a experiência do usuário nas aplicações web."
+    }
   ]
 };
 
@@ -317,6 +463,12 @@ export const expSkills =
       { "detail": "Diseño e implementación de base de datos"},
       { "detail": "Liderazgo y entrega de sistemas complejos de software"}
     ],
+    pt: 
+    [
+      { "detail": "Design orientado a objetos"},
+      { "detail": "Design e implementação de estruturas de banco de dados"},
+      { "detail": "Liderança e entrega de sistemas complexos de software"}
+    ],
     },
   professionals: {
       en: 
@@ -332,6 +484,13 @@ export const expSkills =
         { "detail": "Trabajo en equipo" },
         { "detail": "Gran capacidad para resolver problemas" },
         { "detail": "Buena gestión del tiempo" }
+      ],
+      pt: 
+      [
+        { "detail": "Comunicação efetiva" },
+        { "detail": "Trabalho em equipe" },
+        { "detail": "Grande capacidade para resolver problemas" },
+        { "detail": "Boa gestão do tempo" }
       ]
     },
   interests: {
@@ -350,6 +509,14 @@ export const expSkills =
         { "detail": "Lectura"},
         { "detail": "Aikido"},
         { "detail": "Ciclismo"}
+      ],
+      pt: 
+      [
+        { "detail": "Jogos RTS"},
+        { "detail": "Xadrez/ Shogi"},
+        { "detail": "Leitura"},
+        { "detail": "Aikido"},
+        { "detail": "Ciclismo"}
       ]
     },
   languages: {
@@ -366,6 +533,13 @@ export const expSkills =
         {"lang": "Portugués", "level": "Profesional"},
         {"lang": "Español", "level": "Nativo"},
         {"lang": "Japonés", "level": "Básico"},
+      ],
+      pt: 
+      [
+        {"lang": "Inglês", "level": "Profissional"},
+        {"lang": "Português", "level": "Profissional"},
+        {"lang": "Espanhol", "level": "Nativo"},
+        {"lang": "Japonês", "level": "Básico"},
       ]
     },
 
@@ -379,6 +553,11 @@ export const expSkills =
       [
         {"career": "Ingeniero Civil en Informática","university": "INACAP", "duration": "2008 - 2013"},
         {"career": "Ingeneiero Civil Industrial","university": "UNAB", "duration": "2020 - 2024"},
+      ],
+      pt: 
+      [
+        {"career": "Engenharia Civil em Informática","university": "INACAP", "duration": "2008 - 2013"},
+        {"career": "Engenharia Civil Industrial","university": "UNAB", "duration": "2020 - 2024"},
       ]
     },
   awards: {

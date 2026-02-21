@@ -1,0 +1,212 @@
+[
+    {
+        "image": "curso_c.png",
+        "title": "Simulação de Portfólios de Investimento",
+        "body": "Projeto Django para modelar e simular a evolução de portfólios de investimento com múltiplos ativos. Inclui carregamento de dados do Excel, API REST para consultar métricas financeiras e visualizações gráficas. Permite simular operações e seguir boas práticas com estrutura baseada em Django Styleguide.",
+        "company": "Abaqus",
+        "technologies": "Django, Python",
+        "content": {
+            "detail": "<kbd> <a href=\"https://abaquscl.notion.site/Pregunta-t-cnica-d00b3f926b0845edaec7f198919c83d4\">Teste original</a></kbd><hr><h5> Pergunta técnica</h5><h6>Definições</h6>Um <b>portfólio</b> de investimento é composto por uma combinação de <b>N ativos</b>. Em cada instante de tempo <b>t</b> o montante em dólares para o ativo <b>i</b> é dado pela variável <i>x<sub>{i,t}</sub></i> e, portanto, o valor total do portfólio no tempo t V<sub>t</sub> é equivalente a:<br><br>V<sub>t</sub> = ∑<sup>N</sup><sub>i=1</sub> x<sub>i,t</sub><br><br>O <b>preço</b> de cada ativo ao longo do tempo é dado por <i>p<sub>{i,t}</sub></i> e a <b>quantidade</b> de cada ativo ao longo do tempo é dada por <i>c<sub>{i,t}</sub></i> de forma que: <br><br> x<sub>{i,t}</sub> = p<sub>{i,t}</sub> * c<sub>{i,t}</sub><br><br>Por sua vez, o <b>peso</b> <i>w<sub>{i,t}</sub></i> de cada ativo é conhecido como o % que este representa no portfólio total. Em outras palavras: <br><br> w<sub>i,t</sub> = (x<sub>i,t</sub>) / V<sub>t</sub> = (p<sub>i,t</sub> × c<sub>i,t</sub>) / V<sub>t</sub><br><br>Considere um portfólio que começa em <i>t = 0</i> com valor inicial <i>V<sub>0</sub></i>. A quantidade investida por ativo (<i>c<sub>{i,0}</sub></i>) pode ser calculada usando as definições anteriores, o que resulta em:<br><br>C<sub>{i,0}</sub> = w<sub>{i,0}</sub> * V<sub>0</sub> / P<sub>{i,0}</sub><br><br> No seguinte arquivo:<br><a href= \"https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2f2b5eb3-eab2-48c8-a7bd-9efdbd3d16a2/datos.xlsx\">datos.xlsx</a><br> Existem dois conjuntos de dados separados por planilha:<br>- <b>Weights:</b> valores para w<sub>{i,0}</sub> de dois portfólios (1 e 2 nas colunas C e D respectivamente) onde o tempo <i>t=0</i> equivale a 15/2/22 e <i>i = 1, 2 ...,17</i> corresponde a cada um dos 17 ativos investíveis<br>- <b>Preços:</b> valores para P<sub>{i,t}</sub> onde cada coluna corresponde a cada um dos 17 ativos e cada linha corresponde ao tempo  <i>t = 15/2/22,... 16/2/23</i><br><br><h6>Perguntas</h6><br>1. Crie um projeto em <b>Django</b> que permita modelar a definição anterior. Ou seja, ativos, portfólios, preços, quantidades, pesos, montantes e qualquer outro elemento que considere apropriado. Considere que o projeto deve permitir responder às seguintes perguntas<br>2. Gere uma função tipo ETL que permita ler e carregar os dados do arquivo <b>datos.xlsx</b> para o banco de dados correspondente ao projeto django mencionado no ponto anterior<br>3. Considere que tanto o portfólio 1 quanto o portfólio 2 têm um valor inicial em 15/02/22 (<i>V<sub>0</sub></i>) de $1.000.000.000. Calcule as quantidades iniciais (<i>C<sub>{i,0}</sub></i>) para cada um dos 17 ativos em cada um dos 2 portfólios.<br>4. A partir de 15/02/22, os valores das quantidades permanecem invariantes, <i>C<sub>{i,t}</sub> = c<sub>{i,0}</sub></i>, e, portanto, os valores de <i>x<sub>{i,t}</sub></i> ; <i>w<sub>{i,t}</sub></i> e <i>V<sub>t</sub></i> evoluem devido à variação ao longo do tempo dos preços <i>p<sub>{i,t}</sub></i> e às definições explicitadas no início do documento. Gere endpoints tipo API REST que recebam os parâmetros <b>fecha_inicio</b> e <b>fecha_fin</b> e retornem os valores entre essas datas para <i>w<sub>{i,t}</sub></i> e <i>V<sub>t</sub></i>. Espera-se uso do ORM do Django para obter os dados necessários para os cálculos<br>5. <b>Bonus 1:</b> Gere uma <b>view</b> que use a API anterior onde se possa comparar graficamente a evolução ao longo do tempo das variáveis <i>w<sub>{i,0}</sub></i> e <i>V<sub>t</sub></i>. Para <i>w<sub>{i,t}</sub></i> recomenda-se um gráfico tipo \"stacked area\" e para <i>V<sub>t</sub></i> gráficos de linha.<br>6. <b>Bonus 2:</b> Considere agora a criação de um método que permita processar operações de compra e venda de ativos. O anterior deve permitir processar que no dia 15/05/2022 seja realizada uma operação de compra e venda, onde são vendidos $200.000.000 do ativo EUA e são comprados $200.000.000 da Europa no portfólio 1. Calcule o novo histórico de  <i>c<sub>{i,t}</sub> ; x<sub>{i,t}</sub> ; w<sub>{i,t}</sub></i> e <i>V<sub>t</sub></i><br>7. <b>Bonus:</b> Estruture o projeto Django seguindo o seguinte guia de estilos: <a href=\"https://github.com/HackSoftware/Django-Styleguide\">Django-Styleguide</a>.",
+            "secondDetail": "Segunda descrição",
+            "codes": [
+                {
+                    "title": "Implementação Original (Django, Python)",
+                    "code": "https://bitbucket.org/fsalazarsch/abaqus-django/",
+                    "available": true
+                },
+                {
+                    "title": "Implementação em Laravel, PHP",
+                    "code": "",
+                    "available": false
+                }
+            ]
+        }
+    },
+    {
+        "image": "curso_c.png",
+        "title": "Sistema de Gestão de Tarefas",
+        "body": "Desenvolva um sistema completo de gestão de tarefas com autenticação, roles e permissões",
+        "company": "TechCorp",
+        "technologies": "React, Node.js, MongoDB",
+        "content": {
+            "detail": "Crie um sistema de gestão de tarefas com funcionalidades avançadas de autenticação e autorização.",
+            "codes": [
+                {
+                    "title": "Implementação React + Node.js",
+                    "code": "https://github.com/example/task-manager",
+                    "available": true
+                }
+            ]
+        }
+    },
+    {
+        "image": "man_file_extension.png",
+        "title": "API REST para E-commerce",
+        "body": "Implemente uma API REST completa para um sistema de e-commerce",
+        "company": "Shopify",
+        "technologies": "Express, PostgreSQL, JWT",
+        "content": {
+            "detail": "Desenvolva uma API RESTful com autenticação JWT, gestão de produtos, carrinho de compras e processamento de pagamentos.",
+            "codes": [
+                {
+                    "title": "API E-commerce",
+                    "code": "https://github.com/example/ecommerce-api",
+                    "available": true
+                }
+            ]
+        }
+    },
+    {
+        "image": "curso_c.png",
+        "title": "Dashboard de Analytics",
+        "body": "Crie um dashboard interativo para visualização de dados",
+        "company": "DataViz",
+        "technologies": "Vue.js, D3.js, Python",
+        "content": {
+            "detail": "Desenvolva um dashboard com gráficos interativos usando Vue.js e D3.js para visualização de dados.",
+            "codes": [
+                {
+                    "title": "Dashboard Vue.js",
+                    "code": "https://github.com/example/analytics-dashboard",
+                    "available": true
+                }
+            ]
+        }
+    },
+    {
+        "image": "man_file_extension.png",
+        "title": "Aplicação de Chat em Tempo Real",
+        "body": "Implemente um sistema de chat em tempo real com WebSockets",
+        "company": "ChatApp",
+        "technologies": "Socket.io, React, Node.js",
+        "content": {
+            "detail": "Crie uma aplicação de chat em tempo real usando Socket.io para comunicação bidirecional.",
+            "codes": [
+                {
+                    "title": "Chat App",
+                    "code": "https://github.com/example/realtime-chat",
+                    "available": true
+                }
+            ]
+        }
+    },
+    {
+        "image": "curso_c.png",
+        "title": "Sistema de Recomendações",
+        "body": "Desenvolva um sistema de recomendações usando machine learning",
+        "company": "MLCorp",
+        "technologies": "Python, TensorFlow, Flask",
+        "content": {
+            "detail": "Implemente um sistema de recomendações usando algoritmos de machine learning e TensorFlow.",
+            "codes": [
+                {
+                    "title": "Recommendation System",
+                    "code": "https://github.com/example/recommendation-system",
+                    "available": true
+                }
+            ]
+        }
+    },
+    {
+        "image": "man_file_extension.png",
+        "title": "Plataforma de Aprendizado Online",
+        "body": "Crie uma plataforma completa de cursos online",
+        "company": "EduTech",
+        "technologies": "Laravel, MySQL, Vue.js",
+        "content": {
+            "detail": "Desenvolva uma plataforma de e-learning com gestão de cursos, estudantes e avaliações.",
+            "codes": [
+                {
+                    "title": "E-learning Platform",
+                    "code": "https://github.com/example/elearning",
+                    "available": true
+                }
+            ]
+        }
+    },
+    {
+        "image": "curso_c.png",
+        "title": "Sistema de Monitoramento de Servidores",
+        "body": "Implemente um sistema de monitoramento e alertas para servidores",
+        "company": "DevOps Inc",
+        "technologies": "Python, Prometheus, Grafana",
+        "content": {
+            "detail": "Crie um sistema de monitoramento usando Prometheus para métricas e Grafana para visualização.",
+            "codes": [
+                {
+                    "title": "Server Monitoring",
+                    "code": "https://github.com/example/server-monitoring",
+                    "available": true
+                }
+            ]
+        }
+    },
+    {
+        "image": "man_file_extension.png",
+        "title": "Aplicação de Gestão Financeira",
+        "body": "Desenvolva um app para gestão pessoal de finanças",
+        "company": "FinanceApp",
+        "technologies": "React Native, Firebase, TypeScript",
+        "content": {
+            "detail": "Crie uma aplicação móvel para gestão de gastos e receitas com sincronização na nuvem.",
+            "codes": [
+                {
+                    "title": "Finance App",
+                    "code": "https://github.com/example/finance-app",
+                    "available": true
+                }
+            ]
+        }
+    },
+    {
+        "image": "curso_c.png",
+        "title": "Sistema de Reservas Online",
+        "body": "Implemente um sistema de reservas para restaurantes",
+        "company": "ReserveNow",
+        "technologies": "Angular, Node.js, PostgreSQL",
+        "content": {
+            "detail": "Desenvolva um sistema completo de reservas com calendário, notificações e gestão de mesas.",
+            "codes": [
+                {
+                    "title": "Reservation System",
+                    "code": "https://github.com/example/reservation-system",
+                    "available": true
+                }
+            ]
+        }
+    },
+    {
+        "image": "man_file_extension.png",
+        "title": "Plataforma de Streaming",
+        "body": "Crie uma plataforma de streaming de vídeo",
+        "company": "StreamCorp",
+        "technologies": "Next.js, AWS, FFmpeg",
+        "content": {
+            "detail": "Implemente uma plataforma de streaming com transcodificação de vídeo e CDN.",
+            "codes": [
+                {
+                    "title": "Streaming Platform",
+                    "code": "https://github.com/example/streaming-platform",
+                    "available": true
+                }
+            ]
+        }
+    },
+    {
+        "image": "curso_c.png",
+        "title": "Sistema de Gestão de Inventário",
+        "body": "Desenvolva um sistema completo de inventário",
+        "company": "InventoryPro",
+        "technologies": "Django, PostgreSQL, React",
+        "content": {
+            "detail": "Crie um sistema de gestão de inventário com controle de estoque, fornecedores e relatórios.",
+            "codes": [
+                {
+                    "title": "Inventory System",
+                    "code": "https://github.com/example/inventory-system",
+                    "available": true
+                }
+            ]
+        }
+    }
+]

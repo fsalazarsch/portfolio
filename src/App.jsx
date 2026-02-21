@@ -9,7 +9,8 @@ import Test from './pages/Test';
 import Blog from './pages/Blog';
 import VideoTut from './pages/VideoTut';
 
-import BlogDetail from './components/blog/BlogDetailtemplate';
+import BlogDetail from './components/blog/BlogDetail';
+//import BlogDetail from './components/blog/BlogDetailtemplate';
 
 import TestDetail from './components/test/TestDetail';
 
@@ -29,7 +30,7 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/blogDetail" element={<BlogDetail />} />
+          <Route path="/blogDetail/:title" element={<BlogDetail />} />
           <Route path="/projectDetail/:title" element={<ProjectDetail />} />
           <Route path="/videotut" element={<VideoTut />} />
           <Route path="/videoDetail" element={<VideoDetail />} />

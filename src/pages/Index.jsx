@@ -1,6 +1,6 @@
 import React, { Component,  useEffect, useState } from 'react';
 import { Skills } from "../components/Skills";
-import profile from '../assets/profile.jpg';  
+import profile from '../assets/profile.png';  
 import { Link } from 'react-router-dom';
 
 class Index extends Component {

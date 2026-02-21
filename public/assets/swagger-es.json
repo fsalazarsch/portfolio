@@ -1,0 +1,91 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Portfolio API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/experience": {
+      "get": {
+        "summary": "Obtiene toda la experiencia",
+        "operationId": "getExperience",
+        "responses": {
+          "200": {
+            "description": "Lista de experiencia",
+            "content": {
+              "application/json": {
+                "example": []
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/experience/{tag}": {
+      "get": {
+        "summary": "Filtra experiencia por tag",
+        "operationId": "getExperienceByTag",
+        "parameters": [
+          {
+            "name": "tag",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string" },
+            "example": "react"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Experiencia filtrada por tag",
+            "content": {
+              "application/json": {
+                "example": []
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/portfolio": {
+      "get": {
+        "summary": "Obtiene todo el portfolio",
+        "operationId": "getPortfolio",
+        "responses": {
+          "200": {
+            "description": "Lista de proyectos",
+            "content": {
+              "application/json": {
+                "example": []
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/portfolio/{category}": {
+      "get": {
+        "summary": "Filtra portfolio por categoría",
+        "operationId": "getPortfolioByCategory",
+        "parameters": [
+          {
+            "name": "category",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string" },
+            "example": "frontend"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Portfolio filtrado por categoría",
+            "content": {
+              "application/json": {
+                "example": []
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

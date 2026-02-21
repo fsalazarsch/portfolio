@@ -9,6 +9,7 @@ class Portfolio extends Component {
     this.state = {
       indexData: null,
       lang: localStorage.getItem('language') || 'en',
+      activeFilter: 'all',
     };
   }
 
@@ -30,7 +31,7 @@ class Portfolio extends Component {
   }
 
   render() {
-    const { indexData } = this.state;
+    const { indexData, activeFilter } = this.state;
     if (!indexData) {
         return <p>Loading...</p>; 
       }
@@ -51,28 +52,16 @@ class Portfolio extends Component {
     <section className="projects-list px-3 py-5 p-md-5">
       <div className="container">
         <div className="text-center">
-          <ul id="filters" className="filters mb-5 mx-auto   ps-0">
-            <li className="type active mb-3 mb-lg-0" data-filter="*">
-              All
-            </li>
-            <li className="type  mb-3 mb-lg-0" data-filter=".webapp">
-              Web App
-            </li>
-            <li className="type  mb-3 mb-lg-0" data-filter=".mobileapp">
-              Mobile App
-            </li>
-            <li className="type  mb-3 mb-lg-0" data-filter=".frontend">
-              Frontend
-            </li>
-            <li className="type  mb-3 mb-lg-0" data-filter=".backend">
-              Backend
-            </li>
+          <ul id="filters" className="filters mb-5 mx-auto ps-0">
+            <li className={`type mb-3 mb-lg-0 ${activeFilter === 'all' ? 'active' : ''}`} onClick={() => this.setState({ activeFilter: 'all' })} data-filter="*">All</li>
+            <li className={`type mb-3 mb-lg-0 ${activeFilter === 'web' ? 'active' : ''}`} onClick={() => this.setState({ activeFilter: 'web' })} data-filter=".webapp">Web App</li>
+            <li className={`type mb-3 mb-lg-0 ${activeFilter === 'mobile' ? 'active' : ''}`} onClick={() => this.setState({ activeFilter: 'mobile' })} data-filter=".mobileapp">Mobile App</li>
+            <li className={`type mb-3 mb-lg-0 ${activeFilter === 'frontend' ? 'active' : ''}`} onClick={() => this.setState({ activeFilter: 'frontend' })} data-filter=".frontend">Frontend</li>
+            <li className={`type mb-3 mb-lg-0 ${activeFilter === 'backend' ? 'active' : ''}`} onClick={() => this.setState({ activeFilter: 'backend' })} data-filter=".backend">Backend</li>
           </ul>
-          {/*//filters: mobileapp webapp frontend backend*/}
         </div>
         <div className="project-cards row isotope">
-          <PortfolioList/>
-
+          <PortfolioList activeFilter={activeFilter}/>
         </div>
         {/*//row*/}
       </div>

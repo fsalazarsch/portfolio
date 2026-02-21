@@ -1,7 +1,6 @@
-[
-    {
-    "summary": "Professional IT Engineer with over 10 years of experience in developing<br>and leading innovative projects. Proficient in Java, Python, and full-stack<br>development. Successfully managed multiple projects from conception to <br>completion. Self-taught, detail-oriented, and dedicated to continuous <br>learning.",
-    "whatido_title": "¿What I do?",
+{
+    "summary": "Professional IT Engineer with over 10 years of experience in developing and leading innovative projects. Proficient in Java, Python, and full-stack development. Successfully managed multiple projects from conception to completion. Self-taught, detail-oriented, and dedicated to continuous learning.",
+    "whatido_title": "What I do?",
     "whatido_summary": "I'm a software engineer specialised in frontend, backend and mobile development for complex scalable web apps. I write about software development, programming and other miscellaneous tech things on my blog. Want to know how I may help your project? Check out my project portfolio and online resume.",
     "about_me" : "About Me",
     "dark_mode" : "Dark Mode",
@@ -10,8 +9,8 @@
     "skills": "Skills",
     "technical": "Technical",
     "professionals": "Professionals",
-    "education": "Educationn",
-    "awards": "Cerifications",
+    "education": "Education",
+    "awards": "Certifications",
     "languages": "Languages",
     "interests": "Personal Interests",
     "projects": "Projects",
@@ -19,10 +18,7 @@
     "link_resume": "https://drive.google.com/file/d/1gwjcyVS7i75IO9IHloBqNLoRxVF1VNXa/view?usp=drive_link",
     "summary_porfolio" : "Welcome to my online portfolio. Here, you'll find a selection of my personal projects and company projects that I am permitted to share. I'm currently adapting some of these projects to work with various frameworks.",
     "video_title" : "Videotutorials",
-    "summary_videotutorials": "Welcome! In this section, you’ll find video tutorials and ideas. I'm working on adding more content — stay tuned for updates!<br>NOTE: the videos are in Spanish, but i will add additional information in English"
-
-
-
-
+    "summary_videotutorials": "Welcome! In this section, you'll find video tutorials and ideas. I'm working on adding more content — stay tuned for updates!<br>NOTE: the videos are in Spanish, but i will add additional information in English",
+    "pagination_previous": "Previous",
+    "pagination_next": "Next"
 }
-]

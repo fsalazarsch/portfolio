@@ -1,0 +1,86 @@
+[
+    {
+        "image": "ruta_del_vino.png",
+        "title": "Wine Route",
+        "body": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies...",
+        "date": "2024-01-15",
+        "content": "<div className=\"project-sections py-5\"><div className=\"project-section mb-5\"><h3 className=\"project-section-title mb-3\">Project Overview</h3><p>Lorem ipsum dolor sit amet</p></div><div className=\"project-section mb-5\"><h3 className=\"project-section-title\">The Challenge</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p></div><div className=\"project-section mb-5\"><h3 className=\"project-section-title\">The Solution</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p></div></div>"
+    },
+    {
+        "image": "curso_c.png",
+        "title": "Introduction to React Hooks",
+        "body": "Learn the fundamentals of React Hooks and how to use them to simplify your code. Hooks allow you to use state and other React features without writing a class.",
+        "date": "2024-02-10",
+        "content": "<p>In this article we will explore React Hooks and how they can improve your development.</p>"
+    },
+    {
+        "image": "ruta_del_vino.png",
+        "title": "JavaScript Performance Optimization",
+        "body": "Advanced techniques to improve the performance of your JavaScript applications. From lazy loading to code splitting, discover best practices.",
+        "date": "2024-03-05",
+        "content": "<p>Optimize your JavaScript code with these professional techniques.</p>"
+    },
+    {
+        "image": "curso_c.png",
+        "title": "Complete TypeScript Guide",
+        "body": "TypeScript has become the standard for frontend development. Learn from scratch to advanced concepts in this complete guide.",
+        "date": "2024-03-20",
+        "content": "<p>Master TypeScript with this step-by-step guide.</p>"
+    },
+    {
+        "image": "ruta_del_vino.png",
+        "title": "Docker for Developers",
+        "body": "Learn to containerize your applications with Docker. From basic concepts to production deployments, everything you need to know.",
+        "date": "2024-04-12",
+        "content": "<p>Containerize your applications with Docker.</p>"
+    },
+    {
+        "image": "curso_c.png",
+        "title": "Microservices with Node.js",
+        "body": "Microservices architecture using Node.js. Learn to design, develop and deploy scalable and maintainable microservices.",
+        "date": "2024-04-28",
+        "content": "<p>Build robust microservices with Node.js.</p>"
+    },
+    {
+        "image": "ruta_del_vino.png",
+        "title": "GraphQL vs REST API",
+        "body": "Detailed comparison between GraphQL and REST API. Discover when to use each and the advantages of each approach for your projects.",
+        "date": "2024-05-15",
+        "content": "<p>Choose the best API for your project.</p>"
+    },
+    {
+        "image": "curso_c.png",
+        "title": "Testing in React with Jest and Testing Library",
+        "body": "Learn to write effective tests for your React components. We'll cover unit tests, integration tests and best practices.",
+        "date": "2024-06-01",
+        "content": "<p>Write quality tests for React.</p>"
+    },
+    {
+        "image": "ruta_del_vino.png",
+        "title": "CI/CD with GitHub Actions",
+        "body": "Automate your development pipeline with GitHub Actions. From automatic tests to continuous deployments, configure your complete CI/CD.",
+        "date": "2024-06-18",
+        "content": "<p>Automate your workflow with GitHub Actions.</p>"
+    },
+    {
+        "image": "curso_c.png",
+        "title": "Web Application Security",
+        "body": "Security best practices for modern web applications. Protect your application against common vulnerabilities and attacks.",
+        "date": "2024-07-05",
+        "content": "<p>Protect your web application with these techniques.</p>"
+    },
+    {
+        "image": "ruta_del_vino.png",
+        "title": "Hexagonal Architecture in Python",
+        "body": "Implement hexagonal architecture (ports and adapters) in Python. Separate business logic from implementation details.",
+        "date": "2024-07-22",
+        "content": "<p>Design more maintainable applications with hexagonal architecture.</p>"
+    },
+    {
+        "image": "curso_c.png",
+        "title": "Machine Learning for Developers",
+        "body": "Practical introduction to machine learning for developers. Learn to integrate ML models into your applications.",
+        "date": "2024-08-10",
+        "content": "<p>Integrate ML into your applications.</p>"
+    }
+]

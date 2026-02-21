@@ -1,92 +1,95 @@
-import React from 'react';
-import { testList } from "../../data/tests";
-import { useParams } from 'react-router-dom';
-
+import React, { useState, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 
 function TestDetail(){
+  const [test, setTest] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const { company } = useParams();
+  const navigate = useNavigate();
 
-  const lang = localStorage.getItem('language') || 'en';
-  let test = [];
+  useEffect(() => {
+    const lang = localStorage.getItem('language') || 'en';
+    import(`../../data/${lang}/tests.json`)
+      .then((module) => {
+        setTest(module.default);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("No se pudo cargar la data de tests:", err);
+        setLoading(false);
+      });
+  }, []);
 
-      if (lang === "es"){
-        test = test.concat(testList.es || []);
-      }
-      else if (lang === "pt"){
-        test = test.concat(testList.pt || []);
-      }
-      else{
-        test = test.concat(testList.en || []);
-    }
+  if (loading) return <p>Loading...</p>;
 
-
-
-
-  const { company } = useParams(); // Para obtener el título de la URL
   const data = test.find((item) => item.company === decodeURIComponent(company));
 
+  if (!data) return <p>Test not found</p>;
 
-    return (
+  return (
+    <div className="main-wrapper">
+      <article className="blog-post px-3 py-5 p-md-5">
+        <div className="container single-col-max-width">
 
-  <div className="main-wrapper">
-    <article className="blog-post px-3 py-5 p-md-5">
-      <div className="container single-col-max-width">
-        <header className="blog-post-header">
-          <h2 className="title mb-2">{data.title}</h2>
-          <div className="meta mb-3">
-            <span> {data.company}</span>
-            
-          </div>
-        </header>
-        <div className="blog-post-body"  dangerouslySetInnerHTML={{ __html: data.content.detail }}></div>
-        
-        <h5 className="my-3">Source Code:</h5>
+          <header className="blog-post-header">
+            <h2 className="title mb-2">{data.title}</h2>
+            <div className="meta mb-3">
+              <span>{data.company}</span>
+            </div>
+          </header>
+
+          <div
+            className="blog-post-body"
+            dangerouslySetInnerHTML={{ __html: data.content.detail }}
+          />
+
+          <h5 className="my-3">Source Code:</h5>
           <table className="table table-striped table-hover">
             <thead>
               <tr>
                 <th scope="col">Nombre - Tecnologías</th>
-                <th scope="col"> <i className="fa-solid fa-terminal" /> </th>
+                <th scope="col"><i className="fa-solid fa-terminal" /></th>
               </tr>
             </thead>
             <tbody>
-            {data.content.codes.map((item) => (
-              
+              {data.content.codes.map((item, index) => (
                 item.available === true ? (
-                  <tr>
-                  <td scope="row">&nbsp;{item.title}</td>
-                  <td><a href={item.code}><i className="fab fa-brand fa-bitbucket" /></a></td>
+                  <tr key={index}>
+                    <td>&nbsp;{item.title}</td>
+                    <td>
+                      <a href={item.code} target="_blank" rel="noreferrer">
+                        <i className="fab fa-bitbucket" />
+                      </a>
+                    </td>
                   </tr>
                 ) : (
-                  <tr>
-                  <td scope="row" style={{color: 'gray'}}>&nbsp;{item.title}</td>
-                  <td style={{color: 'gray'}}> <i className="fab fa-brand fa-bitbucket" />{item.code}</td>
+                  <tr key={index}>
+                    <td style={{ color: 'gray' }}>&nbsp;{item.title}</td>
+                    <td style={{ color: 'gray' }}>
+                      <i className="fab fa-bitbucket" />
+                    </td>
                   </tr>
-
                 )
-           ))}
-           </tbody>
-         </table>
-         
-        
-        <nav className="blog-nav nav nav-justified my-5">
-          <a className="nav-link-prev nav-item nav-link rounded-left" href="#">
-            Previous
-            <i className="arrow-prev fas fa-long-arrow-alt-left" />
-          </a>
-          <a className="nav-link-next nav-item nav-link rounded-right" href="#">
-            Next
-            <i className="arrow-next fas fa-long-arrow-alt-right" />
-          </a>
-        </nav>
-        
-        
-      </div>
-      {/*//container*/}
-    </article>
-  </div>
+              ))}
+            </tbody>
+          </table>
 
+          <hr className="mt-5" />
 
-    );
-  
+          <div className="text-center mt-4">
+            <button
+              className="btn btn-primary"
+              onClick={() => navigate('/test')}
+            >
+              <i className="fas fa-arrow-left me-2" />
+              Volver a Tests
+            </button>
+          </div>
+
+        </div>
+      </article>
+    </div>
+  );
 }
 
 export default TestDetail;

@@ -19,7 +19,7 @@
     "link_resume": "https://drive.google.com/file/d/1Wk89nyjFsrGGbqkmFzxJpWOzp4nCwJaG/view?usp=drive_link",
     "summary_porfolio" : "Bienvenido a mi portafolio en línea. Aquí encontrarás una selección de mis proyectos personales y empresariales que puedo compartir. Actualmente estoy adaptando algunos de estos proyectos para que funcionen con diversos frameworks.",
     "video_title" : "Videotutoriales",
-    "summary_videotutorials": "<b>¡Bienvenido!</b> En esta sección encontrarás tutoriales en video e ideas. Estoy trabajando en agregar más contenido — ¡mantente atento a las actualizaciones! "
-    
-
+    "summary_videotutorials": "<b>¡Bienvenido!</b> En esta sección encontrarás tutoriales en video e ideas. Estoy trabajando en agregar más contenido — ¡mantente atento a las actualizaciones! ",
+    "pagination_previous": "Anterior",
+    "pagination_next": "Siguiente"
 }

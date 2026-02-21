@@ -1,30 +1,34 @@
-import React, { Component } from 'react';
-import { useLocation, useParams } from 'react-router-dom';
-import { portfolioList } from "../../data/portfolio";
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import { setInnnerHtml} from '../../utils/formatutils';
 
-  const lang = localStorage.getItem('language') || 'en';
-  let portfolios = [];
-  let view_details="";
-
-      if (lang === "es"){
-        portfolios = portfolios.concat(portfolioList.es || []);
-        view_details="Ver Detalles";
-      }
-      else if (lang === "pt"){
-        portfolios = portfolios.concat(portfolioList.pt || []);
-        view_details="Ver Detalhes";
-      }
-      else{
-      portfolios = portfolios.concat(portfolioList.en || []);
-      view_details="View Details";  
-    }
-
-
 function ProjectDetail() {
+  const [portfolios, setPortfolios] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const { title } = useParams();
 
-  const { title } = useParams(); // Para obtener el título de la URL
+  useEffect(() => {
+    const lang = localStorage.getItem('language') || 'en';
+    import(`../../data/${lang}/portfolio.json`)
+      .then((module) => {
+        setPortfolios(module.default);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("No se pudo cargar la data de portfolio:", err);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) {
+    return <p>Loading...</p>;
+  }
+
   const data = portfolios.find((item) => item.title === decodeURIComponent(title));
+  
+  if (!data) {
+    return <p>Project not found</p>;
+  }
 
     return (
 

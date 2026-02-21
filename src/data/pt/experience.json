@@ -1,0 +1,75 @@
+[
+    {
+        "posicion": "Desenvolvedor Mobile Freelance",
+        "tiempo": "Jan 2023 - Agora",
+        "lugar": "Desenvolvedor Freelance | Chile - EUA",
+        "cuerpo": "<ul><li>Desenvolvedor em plataformas móveis, baseado em Dart/Flutter, Kotlin, Kivy (Python) e Java</li></ul>"
+    },
+    {
+        "posicion": "Engenheiro de TI, Desenvolvedor",
+        "tiempo": "Abr 2022 - Jan 2023",
+        "lugar": "Indra | Rio de Janeiro, Brasil (Home Office)",
+        "cuerpo": "<ul><li>Desenvolvimento de módulos orientados ao Setor Bancário usando Java 11, desenvolvimento de API em Java</li><li>Uso de Bancos de Dados Oracle e AS400 para consultas e Procedures</li><li>Uso de TDD usando Mockito e Jtest para alcançar objetivos</li></ul>"
+    },
+    {
+        "posicion": "Engenheiro de TI, Desenvolvedor",
+        "tiempo": "Dez 2020 - Nov 2022",
+        "lugar": "Qintess | Rio de Janeiro, Brasil / Santiago, Chile (Home Office)",
+        "cuerpo": "<ul><li>Desenvolvimento de módulos orientados ao Setor Bancário usando Java 11, desenvolvimento de API em Java</li><li>Desenvolvimento Frontend Angular e atualização da plataforma de 6.x para 12.x</li><li>Uso de Bancos de Dados Oracle e AS400 para consultas e Procedures</li><li>Uso de TDD usando Jasmine, Karma e Mockito para alcançar objetivos</li><li>Mentoria na plataforma Qintess workspace para gerar valor</li></ul>"
+    },
+    {
+        "posicion": "Engenheiro de TI",
+        "tiempo": "Ago 2020 - Nov 2020",
+        "lugar": "Kubos SPA | Santiago, Chile",
+        "cuerpo": "<ul><li>Desenvolvimento de módulos orientados ao Setor Bancário usando Java (1.8) como Backend e Angular como Frontend</li><li>Banco de dados usado MySQL e MongoDB</li></ul>"
+    },
+    {
+        "posicion": "Desenvolvedor Java, Android, IOS",
+        "tiempo": "Dez 2019 - Jun 2020",
+        "lugar": "Lealtad 360 | Santiago, Chile",
+        "cuerpo": "<ul><li>Desenvolvimento de soluções de fidelidade de clientes, focadas em smartphones (nativo e híbrido), usando backend feito em Java e frontend feito em Ionic (Angular) e Kotlin</li><li>Desenvolver e consumir API, em Java e PHP</li><li>Coaching de processos de desenvolvimento e análise usando Kanban, Scrum e diagrama de Ishikawa (espinha de peixe)</li><li>Uso de testes em Jasmine e Mockito</li></ul>"
+    },
+    {
+        "posicion": "Tech Leader, Desenvolvedor",
+        "tiempo": "Ago 2017 - Nov 2019",
+        "lugar": "Bindex | Santiago, Chile",
+        "cuerpo": "<ul><li>Planejamento, administração e desenvolvimento de plataformas financeiras sob Flask, Django e Yii2, uso de scraping</li><li>Testes usando Pytest e PHPTest</li><li>Reuniões com clientes para obter problemas comuns de plataformas antigas e gerenciar novos módulos da plataforma financeira</li><li>Uso de scraping para fornecer informações reais e em tempo real aos usuários</li><li>Uso de API para segmentação de várias plataformas, para fornecer informações por cliente</li><li>Planejou e gerenciou as fases do ciclo de vida de desenvolvimento do software</li><li>Forneceu liderança técnica aos internos através de coaching e mentoria</li><li>Administração de BD em MySQL e MongoDB</li><li>Atualização de módulos antigos feitos em Java, da versão antiga do JBoss para Wildfly</li></ul>"
+    },
+    {
+        "posicion": "Tech Leader, Desenvolvedor Django, Amazon Cloud",
+        "tiempo": "Mai 2016 - Jun 2017",
+        "lugar": "Connectus | Santiago, Chile",
+        "cuerpo": "<ul><li>Planejamento e migração de plataforma de envio de SMS e Email desde o início, de PHP para Django</li><li>Migração de host compartilhado para Amazon AWS</li><li>Desenvolvimento de novos módulos implementando SMS usando Amazon Services</li><li>Aconselhamento a administradores não-técnicos usando Kanban</li></ul>"
+    },
+    {
+        "posicion": "Project Manager, Desenvolvedor IOS / Android",
+        "tiempo": "Jan 2014 - Abr 2018",
+        "lugar": "City Express | Santiago, Chile",
+        "cuerpo": "<ul><li>Planejamento e desenvolvimento de todos os processos internos dentro da empresa</li><li>Automatização e simplificação de processos desenvolvendo plataformas web do zero sob Yii/Yii2</li><li>Sistema de Administração realizado em Java e Swift para plataformas móveis, para administração de todas as plataformas na empresa</li><li>Manter Balance Score Card, junto com fornecer feedback dado pela plataforma</li></ul>"
+    },
+    {
+        "posicion": "Engenheiro de TI, Desenvolvedor Freelance",
+        "tiempo": "Jun 2013 - Ago 2013",
+        "lugar": "Hostname | Santiago, Chile",
+        "cuerpo": "<ul><li>Desenvolvimento e configuração de CMS sob medida utilizando Zend Framework</li><li>Implementação de novas soluções utilizando Whcms e CakePHP</li><li>Aplicação de nova infraestrutura em servidores em CentOS, incluindo propostas de novas soluções em servidores compartilhados</li></ul>"
+    },
+    {
+        "posicion": "Desenvolvedor PHP, Mobile (estágio)",
+        "tiempo": "Nov 2012 - Jan 2013",
+        "lugar": "Larrain Vial Ltd. | Santiago, Chile",
+        "cuerpo": "<ul><li>Desenvolvimento de rede social interna, realizada em PHP, SQL Server e jQuery</li><li>Desenvolvimento e implementação de novos plugins e addons à solução</li></ul>"
+    },
+    {
+        "posicion": "Desenvolvedor Freelance",
+        "tiempo": "Set 2011 - Abr 2014",
+        "lugar": "Desenvolvedor | Santiago, Chile",
+        "cuerpo": "<ul><li>Desenvolvimento em diversas plataformas de design, Recursos Humanos e serviços públicos na área de TI</li><li>Uso de diversas linguagens de programação como PHP, Python e Java além de diversos frameworks</li><li>Uso de KANBAN e SCRUM para o desenvolvimento de soluções em diversas etapas</li></ul>"
+    },
+    {
+        "posicion": "Desenvolvedor Java, XML, PHP",
+        "tiempo": "Jan 2011 - Abr 2011",
+        "lugar": "Neoingen Ltda. | Santiago, Chile",
+        "cuerpo": "<ul><li>Codificação de páginas web PHP sem framework</li><li>Uso de Javascript, jQuery e Mootools</li><li>Consumo de serviços web desenvolvidos em Java, para plataforma web</li></ul>"
+    }
+]
+

@@ -1,0 +1,204 @@
+[
+    {
+      "type": "web",
+      "image": "ruta_del_vino.png",
+      "title": "Ruta del Vino",
+      "body": "Plataforma web para descubrir rutas turísticas de vino en distintas regiones.",
+      "content": {
+        "client_name": "Viñedos SA",
+        "industry": "Turismo",
+        "website": "https://www.rutadelvino.com/",
+        "project": {
+          "requirements": "",
+          "overview": "<div class=\"project-sections py-5\"><div class=\"project-section mb-5\"><h3 class=\"project-section-title mb-3\">Resumen del Proyecto</h3><p>Plataforma para conectar turistas con rutas de vino locales.</p></div><div class=\"project-section mb-5\"><h3 class=\"project-section-title\">El Desafío</h3><p>Crear una experiencia interactiva que permitiera a los usuarios explorar rutas, bodegas y eventos vitivinícolas de forma intuitiva y atractiva.</p></div><div class=\"project-section mb-5\"><h3 class=\"project-section-title\">La Solución</h3><p>Se desarrolló una SPA con mapas interactivos, filtros por región y un sistema de reseñas para cada bodega.</p></div></div>"
+        },
+        "source_code": [
+          {
+            "implementacion": "React + Node.js",
+            "link": "https://github.com/username/ruta-del-vino",
+            "avalibable": true,
+            "source": "fa-code"
+          }
+        ]
+      }
+    },
+    {
+      "type": "web",
+      "image": "curso_c.png",
+      "title": "Videotutorial - C",
+      "body": "Serie de videotutoriales sobre programación en C para principiantes.",
+      "content": {
+        "client_name": "",
+        "industry": "Educación",
+        "website": "",
+        "project": {
+          "requirements": "",
+          "overview": "<div class=\"project-sections py-5\"><div class=\"project-section mb-5\"><h3 class=\"project-section-title mb-3\">Resumen del Proyecto</h3><p>Curso en video orientado a quienes se inician en la programación con el lenguaje C.</p></div><div class=\"project-section mb-5\"><h3 class=\"project-section-title\">El Desafío</h3><p>Explicar conceptos de bajo nivel de forma clara y accesible para estudiantes sin experiencia previa.</p></div><div class=\"project-section mb-5\"><h3 class=\"project-section-title\">La Solución</h3><p>Se estructuró el contenido en módulos progresivos con ejercicios prácticos al final de cada lección.</p></div></div>"
+        },
+        "source_code": [
+          {
+            "implementacion": "C",
+            "link": "https://github.com/username/tutorial-c",
+            "avalibable": true,
+            "source": "fa-code"
+          }
+        ]
+      }
+    },
+    {
+      "type": "mobile",
+      "image": "fitness_app.png",
+      "title": "FitTrack",
+      "body": "Aplicación móvil para seguimiento de rutinas de ejercicio y progreso físico.",
+      "content": {
+        "client_name": "HealthCo",
+        "industry": "Salud y Deporte",
+        "website": "https://www.fittrack.app/",
+        "project": {
+          "requirements": "",
+          "overview": "<div class=\"project-sections py-5\"><div class=\"project-section mb-5\"><h3 class=\"project-section-title mb-3\">Resumen del Proyecto</h3><p>App móvil para registrar entrenamientos, establecer metas y visualizar el progreso semanal.</p></div><div class=\"project-section mb-5\"><h3 class=\"project-section-title\">El Desafío</h3><p>Diseñar una interfaz que fuera fácil de usar durante el ejercicio, con mínima fricción al registrar series y repeticiones.</p></div><div class=\"project-section mb-5\"><h3 class=\"project-section-title\">La Solución</h3><p>Se implementó una UI minimalista con gestos táctiles rápidos y sincronización en la nube para mantener el historial.</p></div></div>"
+        },
+        "source_code": [
+          {
+            "implementacion": "React Native",
+            "link": "https://github.com/username/fittrack",
+            "avalibable": true,
+            "source": "fa-code"
+          },
+          {
+            "implementacion": "Node.js + MongoDB",
+            "link": "https://github.com/username/fittrack-api",
+            "avalibable": true,
+            "source": "fa-code-branch"
+          }
+        ]
+      }
+    },
+    {
+      "type": "web",
+      "image": "ecommerce.png",
+      "title": "ShopEasy",
+      "body": "Tienda en línea con carrito de compras, pagos integrados y panel de administración.",
+      "content": {
+        "client_name": "Retail Corp",
+        "industry": "Comercio",
+        "website": "https://www.shopeasy.com/",
+        "project": {
+          "requirements": "",
+          "overview": "<div class=\"project-sections py-5\"><div class=\"project-section mb-5\"><h3 class=\"project-section-title mb-3\">Resumen del Proyecto</h3><p>E-commerce completo con catálogo de productos, gestión de inventario y pasarela de pagos.</p></div><div class=\"project-section mb-5\"><h3 class=\"project-section-title\">El Desafío</h3><p>Integrar múltiples métodos de pago y garantizar la seguridad de las transacciones sin sacrificar la velocidad de carga.</p></div><div class=\"project-section mb-5\"><h3 class=\"project-section-title\">La Solución</h3><p>Se utilizó Stripe para pagos, Redis para caché y una arquitectura de microservicios para escalar cada módulo de forma independiente.</p></div></div>"
+        },
+        "source_code": [
+          {
+            "implementacion": "Next.js + Stripe",
+            "link": "https://github.com/username/shopeasy",
+            "avalibable": true,
+            "source": "fa-code"
+          }
+        ]
+      }
+    },
+    {
+      "type": "backend",
+      "image": "api_rest.png",
+      "title": "API REST - Gestión de Usuarios",
+      "body": "API RESTful robusta para autenticación, roles y gestión de usuarios empresariales.",
+      "content": {
+        "client_name": "Enterprise Solutions",
+        "industry": "Tech",
+        "website": "",
+        "project": {
+          "requirements": "",
+          "overview": "<div class=\"project-sections py-5\"><div class=\"project-section mb-5\"><h3 class=\"project-section-title mb-3\">Resumen del Proyecto</h3><p>Backend para manejo de autenticación JWT, roles jerárquicos y auditoría de acciones.</p></div><div class=\"project-section mb-5\"><h3 class=\"project-section-title\">El Desafío</h3><p>Garantizar la seguridad de los datos sensibles cumpliendo con estándares de la industria y permitiendo alta concurrencia.</p></div><div class=\"project-section mb-5\"><h3 class=\"project-section-title\">La Solución</h3><p>Se implementó OAuth2, rate limiting, cifrado AES-256 y documentación automática con Swagger.</p></div></div>"
+        },
+        "source_code": [
+          {
+            "implementacion": "Node.js + PostgreSQL",
+            "link": "https://github.com/username/user-api",
+            "avalibable": true,
+            "source": "fa-code"
+          }
+        ]
+      }
+    },
+    {
+      "type": "frontend",
+      "image": "dashboard.png",
+      "title": "Analytics Dashboard",
+      "body": "Panel de métricas en tiempo real con gráficos interactivos y exportación de reportes.",
+      "content": {
+        "client_name": "DataViz Inc",
+        "industry": "Tech",
+        "website": "https://www.dataviz.io/",
+        "project": {
+          "requirements": "",
+          "overview": "<div class=\"project-sections py-5\"><div class=\"project-section mb-5\"><h3 class=\"project-section-title mb-3\">Resumen del Proyecto</h3><p>Dashboard para visualización de KPIs empresariales con actualización en tiempo real vía WebSockets.</p></div><div class=\"project-section mb-5\"><h3 class=\"project-section-title\">El Desafío</h3><p>Manejar grandes volúmenes de datos sin degradar el rendimiento de la interfaz.</p></div><div class=\"project-section mb-5\"><h3 class=\"project-section-title\">La Solución</h3><p>Se implementó virtualización de listas, lazy loading de gráficos y memoización de componentes para mantener 60fps constantes.</p></div></div>"
+        },
+        "source_code": [
+          {
+            "implementacion": "React + Chart.js",
+            "link": "https://github.com/username/analytics-dashboard",
+            "avalibable": true,
+            "source": "fa-code"
+          },
+          {
+            "implementacion": "Node.js + WebSockets",
+            "link": "https://github.com/username/analytics-api",
+            "avalibable": true,
+            "source": "fa-code-branch"
+          }
+        ]
+      }
+    },
+    {
+      "type": "mobile",
+      "image": "chat_app.png",
+      "title": "ChatNow",
+      "body": "Aplicación de mensajería instantánea con salas grupales y envío de archivos.",
+      "content": {
+        "client_name": "",
+        "industry": "Comunicaciones",
+        "website": "",
+        "project": {
+          "requirements": "",
+          "overview": "<div class=\"project-sections py-5\"><div class=\"project-section mb-5\"><h3 class=\"project-section-title mb-3\">Resumen del Proyecto</h3><p>App de chat en tiempo real con soporte para grupos, mensajes privados y archivos adjuntos.</p></div><div class=\"project-section mb-5\"><h3 class=\"project-section-title\">El Desafío</h3><p>Garantizar la entrega de mensajes en orden y sin pérdidas bajo condiciones de red inestable.</p></div><div class=\"project-section mb-5\"><h3 class=\"project-section-title\">La Solución</h3><p>Se utilizó Socket.io con confirmaciones de entrega, cola de mensajes pendientes y reconexión automática.</p></div></div>"
+        },
+        "source_code": [
+          {
+            "implementacion": "React Native + Socket.io",
+            "link": "https://github.com/username/chatnow",
+            "avalibable": true,
+            "source": "fa-code"
+          }
+        ]
+      }
+    },
+    {
+      "type": "web",
+      "image": "crm.png",
+      "title": "CRM Lite",
+      "body": "Sistema de gestión de clientes y seguimiento de ventas para pequeñas empresas.",
+      "content": {
+        "client_name": "PymeSoft",
+        "industry": "Software",
+        "website": "https://www.pymesoft.com/",
+        "project": {
+          "requirements": "",
+          "overview": "<div class=\"project-sections py-5\"><div class=\"project-section mb-5\"><h3 class=\"project-section-title mb-3\">Resumen del Proyecto</h3><p>CRM enfocado en pymes con módulos de contactos, pipeline de ventas y reportes automáticos.</p></div><div class=\"project-section mb-5\"><h3 class=\"project-section-title\">El Desafío</h3><p>Ofrecer las funcionalidades esenciales de un CRM enterprise a un costo accesible para pequeños negocios.</p></div><div class=\"project-section mb-5\"><h3 class=\"project-section-title\">La Solución</h3><p>Se priorizaron las features más usadas, se eliminó la complejidad innecesaria y se ofreció como SaaS con plan gratuito.</p></div></div>"
+        },
+        "source_code": [
+          {
+            "implementacion": "Vue.js + Laravel",
+            "link": "https://github.com/username/crm-lite",
+            "avalibable": true,
+            "source": "fa-code"
+          },
+          {
+            "implementacion": "MySQL",
+            "link": "https://github.com/username/crm-lite-db",
+            "avalibable": false,
+            "source": "fa-code-branch"
+          }
+        ]
+      }
+    }
+  ]

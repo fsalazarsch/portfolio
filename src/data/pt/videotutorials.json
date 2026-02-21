@@ -1,0 +1,146 @@
+[
+    {
+        "image": "curso_c.png",
+        "title": "Videotutorial - C",
+        "body": "Aprenda os fundamentos da linguagem de programação C do zero",
+        "date": "2024-10-29",
+        "content": {
+            "detail": "Neste videotutorial abordaremos os fundamentos essenciais da linguagem de programação C, ideal para quem deseja iniciar na programação de baixo nível e compreender como interagem diretamente com a memória e o sistema. Através de exemplos práticos, explicaremos como escrever código eficiente e estruturado que estabeleça as bases para desenvolvimentos mais complexos.",
+            "playlistId": "PLoS5lNyteuYTYtS3NeIK2tlDEkHFQ9Rqf",
+            "playlist": [
+                {
+                    "name": "Introdução a C",
+                    "time": "5:04",
+                    "code": "https://github.com/fsalazarsch/cursos_nullpointerex/blob/master/C/holamundo.c",
+                    "available": true
+                },
+                {
+                    "name": "Variáveis",
+                    "time": "7:03",
+                    "code": "",
+                    "available": false
+                }
+            ]
+        }
+    },
+    {
+        "image": "man_file_extension.png",
+        "title": "Como fazer uma página .man",
+        "body": "Aprenda a criar páginas de manual personalizadas",
+        "date": "2023-11-20",
+        "content": {
+            "detail": "Neste mini-tutorial você aprenderá a criar uma página de manual (.man) personalizada para qualquer programa ou script que desenvolva, independentemente da linguagem. Isso não apenas melhora a apresentação da sua ferramenta, mas também permite que outros usuários acessem sua documentação do terminal com um simples comando man.",
+            "playlistId": ""
+        }
+    },
+    {
+        "image": "curso_c.png",
+        "title": "Python para Iniciantes",
+        "body": "Curso completo de Python do zero até nível intermediário",
+        "date": "2024-09-15",
+        "content": {
+            "detail": "Aprenda Python dos conceitos básicos até técnicas avançadas. Ideal para quem quer iniciar em programação ou melhorar suas habilidades.",
+            "playlistId": "PLdummy1",
+            "playlist": []
+        }
+    },
+    {
+        "image": "man_file_extension.png",
+        "title": "React Hooks Avançados",
+        "body": "Domine os hooks mais avançados do React",
+        "date": "2024-08-20",
+        "content": {
+            "detail": "Aprofunde-se no uso de hooks personalizados, useMemo, useCallback e outras técnicas avançadas do React.",
+            "playlistId": "PLdummy2",
+            "playlist": []
+        }
+    },
+    {
+        "image": "curso_c.png",
+        "title": "Docker e Kubernetes",
+        "body": "Guia completo de containerização e orquestração",
+        "date": "2024-07-10",
+        "content": {
+            "detail": "Aprenda a usar Docker para containerizar aplicações e Kubernetes para orquestrá-las em produção.",
+            "playlistId": "PLdummy3",
+            "playlist": []
+        }
+    },
+    {
+        "image": "man_file_extension.png",
+        "title": "GraphQL do Zero",
+        "body": "Aprenda GraphQL e Apollo Client",
+        "date": "2024-06-05",
+        "content": {
+            "detail": "Tutorial completo sobre GraphQL, dos conceitos básicos até implementação prática com Apollo Client.",
+            "playlistId": "PLdummy4",
+            "playlist": []
+        }
+    },
+    {
+        "image": "curso_c.png",
+        "title": "TypeScript Avançado",
+        "body": "Técnicas avançadas de TypeScript para projetos grandes",
+        "date": "2024-05-18",
+        "content": {
+            "detail": "Aprenda técnicas avançadas de TypeScript como generics, utility types e padrões de design.",
+            "playlistId": "PLdummy5",
+            "playlist": []
+        }
+    },
+    {
+        "image": "man_file_extension.png",
+        "title": "Testes com Jest",
+        "body": "Escreva testes efetivos para JavaScript e React",
+        "date": "2024-04-22",
+        "content": {
+            "detail": "Aprenda a configurar Jest, escrever testes unitários, testes de integração e mocks efetivos.",
+            "playlistId": "PLdummy6",
+            "playlist": []
+        }
+    },
+    {
+        "image": "curso_c.png",
+        "title": "Node.js e Express",
+        "body": "Construa APIs RESTful com Node.js",
+        "date": "2024-03-30",
+        "content": {
+            "detail": "Aprenda a criar APIs robustas usando Node.js e Express, incluindo autenticação e tratamento de erros.",
+            "playlistId": "PLdummy7",
+            "playlist": []
+        }
+    },
+    {
+        "image": "man_file_extension.png",
+        "title": "MongoDB e Mongoose",
+        "body": "Banco de dados NoSQL para aplicações modernas",
+        "date": "2024-02-14",
+        "content": {
+            "detail": "Aprenda a usar MongoDB com Mongoose para criar aplicações com bancos de dados NoSQL escaláveis.",
+            "playlistId": "PLdummy8",
+            "playlist": []
+        }
+    },
+    {
+        "image": "curso_c.png",
+        "title": "Git e GitHub Avançado",
+        "body": "Domine o controle de versões",
+        "date": "2024-01-25",
+        "content": {
+            "detail": "Aprenda técnicas avançadas de Git, estratégias de branching e colaboração efetiva com GitHub.",
+            "playlistId": "PLdummy9",
+            "playlist": []
+        }
+    },
+    {
+        "image": "man_file_extension.png",
+        "title": "CI/CD com GitHub Actions",
+        "body": "Automatize seu pipeline de desenvolvimento",
+        "date": "2023-12-10",
+        "content": {
+            "detail": "Configure pipelines de CI/CD completos usando GitHub Actions para automatizar testes e implantações.",
+            "playlistId": "PLdummy10",
+            "playlist": []
+        }
+    }
+]

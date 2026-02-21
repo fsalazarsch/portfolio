@@ -7,21 +7,136 @@ class Navbar extends React.Component {
     super(props);
     this.state = {
       indexData: null,
-      lang: localStorage.getItem('language') || 'en',
+      lang: localStorage.getItem('language') || 'es',
+      darkMode: this.getInitialDarkMode(),
     };
   }
 
   componentDidMount() {
+    this.loadLanguageData();
+    // Initialize dark mode after a short delay to ensure DOM is ready
+    setTimeout(() => {
+      this.initializeDarkMode();
+      this.setupDarkModeToggle();
+    }, 100);
+  }
+
+  getInitialDarkMode = () => {
+    // Check localStorage first
+    const stored = localStorage.getItem('theme');
+    if (stored === 'dark') {
+      return true;
+    }
+    if (stored === 'light') {
+      return false;
+    }
+    
+    // Check cookie if js-cookie is available
+    if (typeof window !== 'undefined' && window.Cookies) {
+      const cookieMode = window.Cookies.get('mode');
+      if (cookieMode === 'dark-mode') {
+        localStorage.setItem('theme', 'dark');
+        return true;
+      }
+    }
+    
+    // Check if body already has dark-mode class (from index.js)
+    if (document.body.classList.contains('dark-mode')) {
+      return true;
+    }
+    
+    // Check system preference
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      return true;
+    }
+    
+    return false;
+  }
+
+  initializeDarkMode = () => {
+    const isDark = this.state.darkMode;
+    const body = document.body;
+    
+    // Ensure body has correct class
+    if (isDark) {
+      body.classList.add('dark-mode');
+      body.classList.remove('light-mode');
+    } else {
+      body.classList.remove('dark-mode');
+      body.classList.add('light-mode');
+    }
+  }
+
+  setupDarkModeToggle = () => {
+    // React handles this via onChange, but ensure checkbox is synced
+    setTimeout(() => {
+      const checkbox = document.getElementById('darkmode');
+      if (checkbox && checkbox.checked !== this.state.darkMode) {
+        checkbox.checked = this.state.darkMode;
+      }
+    }, 50);
+  }
+
+  handleDarkModeToggle = (event) => {
+    const isDark = event.target.checked;
+    const body = document.body;
+    
+    if (isDark) {
+      body.classList.add('dark-mode');
+      localStorage.setItem('theme', 'dark');
+      // Set cookie if js-cookie is available
+      if (typeof window !== 'undefined' && window.Cookies) {
+        window.Cookies.set('mode', 'dark-mode', { expires: 7 });
+      }
+    } else {
+      body.classList.remove('dark-mode');
+      localStorage.setItem('theme', 'light');
+      // Remove cookie if js-cookie is available
+      if (typeof window !== 'undefined' && window.Cookies) {
+        window.Cookies.remove('mode');
+      }
+    }
+    
+    this.setState({ darkMode: isDark });
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.lang !== this.state.lang) {
+      this.loadLanguageData();
+    }
+  }
+
+  componentWillUnmount() {
+    // Clean up event listener if needed
+    const checkbox = document.getElementById('darkmode');
+    if (checkbox) {
+      checkbox.removeEventListener('change', this.handleDarkModeToggle);
+    }
+  }
+
+  loadLanguageData = () => {
     const { lang } = this.state;
     import(`../data/${lang}/index.json`)
       .then((module) => {
         const data = module.default;
         this.setState({ indexData: data });
-        console.log(data)
       })
       .catch((err) => {
         console.error("No se pudo cargar la data:", err);
+        // Fallback a inglés si el idioma no existe
+        if (lang !== 'en') {
+          this.setState({ lang: 'en' });
+        }
       });
+  }
+
+  handleLanguageChange = (newLang) => {
+    if (newLang !== this.state.lang) {
+      localStorage.setItem('language', newLang);
+      this.setState({ lang: newLang });
+      // Recargar la página para actualizar todos los componentes
+      window.location.reload();
+    }
   }
 
   setInnnerHtml(innerHtml) {
@@ -121,12 +236,71 @@ class Navbar extends React.Component {
         <i className="fas fa-file-pdf me-2" />
         {indexData.downlaod_pdf}
       </a>
-<hr className="mb-4" />
+              <hr className="mb-4" />
+              
+              {/* Language Selector */}
+              <div className="language-selector mb-4">
+                <h4 className="toggle-name mb-3">
+                  <i className="fas fa-language me-1"></i>Idioma / Language / Idioma
+                </h4>
+                <div className="btn-group" role="group" aria-label="Language selector">
+                  <button
+                    type="button"
+                    className={`btn btn-sm ${
+                      this.state.lang === 'es' 
+                          ? 'btn-primary' 
+                          : this.getInitialDarkMode() 
+                              ? 'btn-outline-primary' 
+                              : 'btn-outline'
+                  }`}
+                    onClick={() => this.handleLanguageChange('es')}
+                    title="Español"
+                  >
+                    🇪🇸 ES
+                  </button>
+                  <button
+                    type="button"
+                    className={`btn btn-sm ${
+                      this.state.lang === 'en' 
+                          ? 'btn-primary' 
+                          : this.getInitialDarkMode() 
+                              ? 'btn-outline-primary' 
+                              : 'btn-outline'
+                  }`}
+                    onClick={() => this.handleLanguageChange('en')}
+                    title="English"
+                  >
+                    🇺🇸 EN
+                  </button>
+                  <button
+                    type="button"
+                    className={`btn btn-sm ${
+                      this.state.lang === 'pt' 
+                          ? 'btn-primary' 
+                          : this.getInitialDarkMode() 
+                              ? 'btn-outline-primary' 
+                              : 'btn-outline'
+                  }`}
+                    onClick={() => this.handleLanguageChange('pt')}
+                    title="Português"
+                  >
+                    🇧🇷 PT
+                  </button>
+                </div>
+              </div>
+
+              <hr className="mb-4" />
               <h4 className="toggle-name mb-3">
                 <i className="fas fa-adjust me-1"></i>{indexData.dark_mode}
               </h4>
 
-              <input className="toggle" id="darkmode" type="checkbox" />
+              <input 
+                className="toggle" 
+                id="darkmode" 
+                type="checkbox" 
+                checked={this.state.darkMode}
+                onChange={this.handleDarkModeToggle}
+              />
               <label className="toggle-btn mx-auto mb-0" htmlFor="darkmode"></label>
             </div>
       </header>
