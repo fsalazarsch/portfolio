@@ -76,9 +76,9 @@ export const BlogList = () => {
                   <span className="date">{timepassed(data.date)}</span>
                   <span className="time">5 min read</span>
                   <span className="comment">
-                    <a className="text-link btn btn-link p-0" type="button">
+                    <button className="text-link btn btn-link p-0" type="button">
                       0 comments
-                    </a>
+                    </button>
                   </span>
                 </div>
                 <div className="intro">

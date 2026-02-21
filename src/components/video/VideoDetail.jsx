@@ -41,9 +41,9 @@ function VideoDetail () {
           <div className="meta mb-3">
             <span className="date">{data.date}</span>
             <span className="comment">
-              <a className="text-link btn btn-link p-0" type="button">
+              <button className="text-link btn btn-link p-0" type="button">
                 
-              </a>
+              </button>
             </span>
           </div>
         </header>
