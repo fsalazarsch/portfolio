@@ -1,4 +1,4 @@
-import React, { Component,  useEffect, useState } from 'react';
+import React, { Component } from 'react';
 import { Skills } from "../components/Skills";
 import profile from '../assets/profile.png';  
 import { Link } from 'react-router-dom';

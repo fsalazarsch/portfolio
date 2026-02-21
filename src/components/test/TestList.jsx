@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from 'react-router-dom';
 
 
 export const TestList = () => {
@@ -49,9 +48,6 @@ export const TestList = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  function setInnerHtml(innerHtml){
-    return {__html: innerHtml}
-  }
 
   return (
     <>

@@ -37,9 +37,6 @@ export const BlogList = () => {
     setCurrentPage(1);
   }, [blogList]);
 
-  function setInnerHtml(innerHtml){
-    return {__html: innerHtml}
-  }
 
   if (loading) {
     return <p>Loading...</p>;
@@ -79,7 +76,7 @@ export const BlogList = () => {
                   <span className="date">{timepassed(data.date)}</span>
                   <span className="time">5 min read</span>
                   <span className="comment">
-                    <a className="text-link" href="#">
+                    <a className="text-link btn btn-link p-0" type="button">
                       0 comments
                     </a>
                   </span>

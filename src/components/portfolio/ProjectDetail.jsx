@@ -123,7 +123,7 @@ function ProjectDetail() {
                     {/* <i class="fas fa-link fa-fw me-2"></i> Font Awesome fontawesome.com */}
                     Website:
                   </strong>{" "}
-                  <a className="theme-link" href="#">
+                  <a className="text-link btn btn-link p-0" type="button">
                     {data.website}
                   </a>
                 </li>
